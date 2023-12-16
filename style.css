@@ -1,0 +1,29 @@
+body {
+    background-color: #1a1a1a;
+    font-family: "Courier New", serif;
+    color: white;
+}
+
+button {
+    background-color: white;
+    border-radius: 10px;
+    font-family: "Courier New", serif;
+    color: black;
+    border: none;
+    width: 80px;
+    height: 40px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+.albums {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+}
