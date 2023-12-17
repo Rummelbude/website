@@ -1,0 +1,44 @@
+body {
+    background-color: #1a1a1a;
+    font-family: "Courier New", serif;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+.album {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 black, 0 3px 10px 0 black;
+}
+
+.streams {
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+
+.albums {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px 0 black, 0 3px 10px 0 black;
+    transition-duration: 0.4s;
+}
+
+.albums:hover {
+    box-shadow: 0 2px 4px 0 dimgray, 0 6px 10px 0 dimgray;
+}
+
+#albumstable {
+    width: 900px;
+}
+
+.infotable {
+    width: 480px;
+    text-align: left;
+}

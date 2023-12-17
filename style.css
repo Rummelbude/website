@@ -4,6 +4,13 @@ body {
     color: white;
 }
 
+#logo {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 black, 0 3px 10px 0 black;
+}
+
 button {
     background-color: white;
     border-radius: 10px;
@@ -23,19 +30,10 @@ button:hover {
     box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
 }
 
-.albums {
-    height: 200px;
-    width: 200px;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 0 2px 4px 0 black, 0 3px 10px 0 black;
-    transition-duration: 0.4s;
+a {
+    color: white;
 }
 
-.albums:hover {
-    box-shadow: 0 2px 4px 0 dimgray, 0 6px 10px 0 dimgray;
-}
-
-table {
-    width: 900px;
+#calendar {
+    width: 500px;
 }
