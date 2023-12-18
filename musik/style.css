@@ -42,3 +42,11 @@ a {
     width: 480px;
     text-align: left;
 }
+
+.infotablenumber {
+    width: 25px;
+}
+
+.infotableleft {
+    width: 230px;
+}

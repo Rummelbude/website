@@ -17,11 +17,12 @@ button {
     font-family: "Courier New", serif;
     color: black;
     border: none;
-    width: 80px;
+    width: 135px;
     height: 40px;
     cursor: pointer;
     box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 white;
     transition-duration: 0.4s;
+    margin-bottom: 13px;
 }
 
 button:hover {
