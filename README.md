@@ -14,6 +14,7 @@ Unterstütze das Projekt jetzt! Schau dir [die neue Website](https://rummelbude.
     * **\[album\].html**: Albumseite
 * support
     * **index.html**: Supportseite
+* **404.html**: 404-Fehlerseite
 * **code.js**: JavaScript-Code für alle Seiten
 * **index.html**: Startseite
 * **style.css**: Style für fast alle Seiten
