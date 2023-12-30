@@ -12,6 +12,8 @@ Unterstütze das Projekt jetzt! Schau dir [die neue Website](https://rummelbude.
     * **index.html**: Musikübersichtsseite
     * **style.css**: Style für die Musikseiten
     * **\[album\].html**: Albumseite
+* newsletter
+    * **index.html**: Übersichtsseite für den Newsletter (Anmeldung, Datenschutzhinweise & Informationen)
 * support
     * **index.html**: Supportseite
 * **404.html**: 404-Fehlerseite
