@@ -34,5 +34,107 @@
       "SPACE",
       "SYNTHMASTER"
     ]
+  },
+  "soundbox": {
+    "name": "Soundbox",
+    "albumcover": "03_Soundbox_200x200.jpg",
+    "streamingplatforms": {
+      "1": "Website (+Download)"
+    },
+    "streaminglinks": {
+      "1": "https://rummelbude.wixsite.com/musik/soundbox"
+    },
+    "publishdate": "01.01.2021",
+    "songcount": 9,
+    "length": "25 Minuten",
+    "instrumental": 9,
+    "songs": [
+      "Cover Alle meine Entchen",
+      "Cover Smoke on the Water",
+      "Cover Smoke on the Water (Acoustic)",
+      "Cover Walk like an Egyptian",
+      "Soundbox - Song Nr. 1",
+      "Soundbox - Song Nr. 2",
+      "Soundbox - Song Nr. 3",
+      "Soundbox - Song Nr. 4",
+      "Soundbox - Song Nr. 5"
+    ]
+  },
+  "adventszauber-2020": {
+    "name": "Adventszauber 2020",
+    "albumcover": "03_SoundboxAdventszauber_200x200.jpg",
+    "streamingplatforms": {
+      "1": "Website (+Download)"
+    },
+    "streaminglinks": {
+      "1": "https://rummelbude.wixsite.com/musik/adventszauber-2020"
+    },
+    "publishdate": "29.11.2020",
+    "songcount": 5,
+    "length": "15 Minuten",
+    "instrumental": 0,
+    "songs": [
+      "Der erste Advent",
+      "Der zweite Advent",
+      "Der dritte Advent",
+      "Der vierte Advent",
+      "Der 24.12.2020"
+    ]
+  },
+  "alles-banane": {
+    "name": "Alles Banane",
+    "albumcover": "02_AllesBanane_200x200.jpg",
+    "streamingplatforms": {
+      "1": "Website (+Download)"
+    },
+    "streaminglinks": {
+      "1": "https://rummelbude.wixsite.com/musik/alles-banane"
+    },
+    "publishdate": "06.12.2020",
+    "songcount": 10,
+    "length": "7 Minuten",
+    "instrumental": 10,
+    "songs": [
+      "Alles Banane",
+      "Cover Another One Bites the Dust (Special)",
+      "Cover Strip my Mind",
+      "Alles Banane - Song Nr. 1",
+      "Alles Banane - Song Nr. 2",
+      "Alles Banane - Song Nr. 3",
+      "Alles Banane - Song Nr. 4",
+      "Alles Banane - Song Nr. 5",
+      "Alles Banane - Song Nr. 6",
+      "Sad (Bonustrack)"
+    ]
+  },
+  "instrumenten-misch": {
+    "name": "Instrumenten Misch",
+    "albumcover": "01_InstrumentenMisch_200x200.jpg",
+    "streamingplatforms": {
+      "1": "Website (+Download)"
+    },
+    "streaminglinks": {
+      "1": "https://rummelbude.wixsite.com/musik/instrumenten-misch"
+    },
+    "publishdate": "21.11.2020",
+    "songcount": 14,
+    "length": "8 Minuten",
+    "instrumental": 14,
+    "songs": [
+      "Cover Another One Bites the Dust",
+      "Cover Under Pressure",
+      "Instrumenten Misch - Song Nr. 1",
+      "Instrumenten Misch - Song Nr. 2",
+      "Instrumenten Misch - Song Nr. 3",
+      "Instrumenten Misch - Song Nr. 4",
+      "Instrumenten Misch - Song Nr. 5",
+      "Instrumenten Misch - Song Nr. 6",
+      "Instrumenten Misch - Song Nr. 7",
+      "Instrumenten Misch - Song Nr. 8",
+      "Instrumenten Misch - Song Nr. 8 (Acoustic)",
+      "Instrumenten Misch - Song Nr. 9",
+      "Instrumenten Misch - Song Nr. 10",
+      "Gimmick Drums (Bonus Track)"
+    ]
   }
 }
