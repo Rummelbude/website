@@ -1,0 +1,38 @@
+{
+  "hello": {
+    "name": "HELLo",
+    "albumcover": "16_HELLo_200x200.jpg",
+    "streamingplatforms": {
+      "1": "YouTube"
+    },
+    "streaminglinks": {
+      "1": "https://youtube.com/playlist?list=PLtiN0t0kunT6yQgQkRNJi985mFC5EBM97"
+    },
+    "publishdate": "18.06.2023 // 25.06.2023",
+    "songcount": 20,
+    "length": "1 Stunde, 20 Minuten",
+    "instrumental": 19,
+    "songs": [
+      "HELLO",
+      "Hi",
+      "ON THE HIGHWAY",
+      "HELL",
+      "TRHEKREV",
+      "GUZHENG",
+      "101",
+      "HELLROCK",
+      "PEST OR CHOLERA",
+      "WIR",
+      "A LITTLE BIT DIFFERENT",
+      "ARCADE",
+      "Take on Me Mix #2",
+      "RELAX",
+      "HELLo",
+      "Africa (Original by Toto)",
+      "PLUTO",
+      "Funkytown (Original by Lipps Inc.)",
+      "SPACE",
+      "SYNTHMASTER"
+    ]
+  }
+}
