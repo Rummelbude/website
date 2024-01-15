@@ -35,6 +35,88 @@
       "SYNTHMASTER"
     ]
   },
+  "pluto": {
+    "name": "PLUTO",
+    "albumcover": "15_PLUTO_200x200.jpg",
+    "streamingplatforms": {
+      "1": "YouTube"
+    },
+    "streaminglinks": {
+      "1": "https://youtube.com/playlist?list=PLtiN0t0kunT4T26ax4jclc5P2QtyhHYEx"
+    },
+    "publishdate": "28.05.2023",
+    "songcount": 3,
+    "length": "11 Minuten, 38 Sekunden",
+    "instrumental": 3,
+    "songs": [
+      "PLUTO",
+      "ERIS",
+      "ORCUS"
+    ]
+  },
+  "verkehrt": {
+    "name": "VERKEHRT",
+    "albumcover": "14_VERKEHRT_200x200.jpg",
+    "streamingplatforms": {
+      "1": "YouTube"
+    },
+    "streaminglinks": {
+      "1": "https://youtube.com/playlist?list=PLtiN0t0kunT59fcEYei9s2VR36CHYbXIM"
+    },
+    "publishdate": "08.03.2023",
+    "songcount": 3,
+    "length": "15 Minuten",
+    "instrumental": 2,
+    "songs": [
+      "VERKEHRT",
+      "TRHEKREV",
+      "THERDREV"
+    ]
+  },
+  "kreativ-ii": {
+    "name": "KREATIV II",
+    "albumcover": "13_KREATIVII_200x200.jpg",
+    "streamingplatforms": {
+      "1": "YouTube"
+    },
+    "streaminglinks": {
+      "1": "https://youtube.com/playlist?list=PLtiN0t0kunT7j7E2WohJ9xNCS6giJyZVf"
+    },
+    "publishdate": "14.02.2023",
+    "songcount": 1,
+    "length": "6 Minuten",
+    "instrumental": 1,
+    "songs": [
+      "KREATIV II"
+    ]
+  },
+  "chaos": {
+    "name": "CHAOS",
+    "albumcover": "12_CHAOS_200x200.jpg",
+    "streamingplatforms": {
+      "1": "YouTube"
+    },
+    "streaminglinks": {
+      "1": "https://youtube.com/playlist?list=PLtiN0t0kunT7sdjaYZA5kJj6pMMRzzB25"
+    },
+    "publishdate": "01.01.2023",
+    "songcount": 11,
+    "length": "52 Minuten",
+    "instrumental": 11,
+    "songs": [
+      "CHAOS HOUSE",
+      "APOCALYPSE",
+      "DISCO",
+      "DREAM",
+      "CYMATICS (Original by Nigel Stanford)",
+      "EXPLODING SUN",
+      "SOLAR STORM",
+      "THROUGH THE MUSIC",
+      "THROUGH THE CHAOS",
+      "THE ENTRY",
+      "HAPPY NEW YEAR"
+    ]
+  },
   "soundbox": {
     "name": "Soundbox",
     "albumcover": "03_Soundbox_200x200.jpg",
