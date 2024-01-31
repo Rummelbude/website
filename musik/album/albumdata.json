@@ -137,6 +137,191 @@
       "HAPPY NEW YEAR"
     ]
   },
+  "kunst": {
+    "name": "KUNST (feat. Hybrix)",
+    "albumcover": "11_KUNST_200x200.jpg",
+    "streamingplatforms": [
+      "YouTube",
+      "Spotify"
+    ],
+    "streaminglinks": [
+      "https://youtube.com/playlist?list=PLtiN0t0kunT6AbBqNdL9RIkDl-eJgJShi",
+      "https://open.spotify.com/album/3cH6hvXtERjdKSTgi1FZMv"
+    ],
+    "publishdate": "26.11.2022",
+    "songcount": 2,
+    "length": "7 Minuten",
+    "instrumental": 2,
+    "songs": [
+      "KUNST (feat. Hybrix)",
+      "KREATIV (feat. Hybrix)"
+    ]
+  },
+  "geometrie": {
+    "name": "GEOMETRIE",
+    "albumcover": "10_GEOMETRIE_200x200.jpg",
+    "streamingplatforms": [
+      "YouTube"
+    ],
+    "streaminglinks": [
+      "https://youtube.com/playlist?list=PLtiN0t0kunT7mRsyPq5Aycup62HYjl70_"
+    ],
+    "publishdate": "25.05.2022",
+    "songcount": 11,
+    "length": "34 Minuten",
+    "instrumental": 11,
+    "songs": [
+      "GEOMETRIE",
+      "ECKEN @ KANTEN",
+      "KEGEL",
+      "PARTY",
+      "HEXAGON",
+      "NICHT GANZ PARALLEL",
+      "QUADRAT",
+      "RUNDE ECKE",
+      "POWERFUL SQUARE",
+      "ELLIPSE",
+      "TeChNiScHe StÖrUnG"
+    ]
+  },
+  "happy-birthday": {
+    "name": "HAPPY BIRTDAY",
+    "albumcover": "09_HAPPYBIRTHDAY_200x200.jpg",
+    "streamingplatforms": [
+      "YouTube"
+    ],
+    "streaminglinks": [
+      "https://youtube.com/playlist?list=PLtiN0t0kunT457b9X861Id305pI749eB7"
+    ],
+    "publishdate": "31.03.2022",
+    "songcount": 2,
+    "length": "6 Minuten",
+    "instrumental": 2,
+    "songs": [
+      "HAPPY BIRTHDAY",
+      "PARTY"
+    ]
+  },
+  "wanted": {
+    "name": "WANTED",
+    "albumcover": "08_WANTED_200x200.jpg",
+    "streamingplatforms": [
+      "YouTube"
+    ],
+    "streaminglinks": [
+      "https://youtube.com/playlist?list=PLtiN0t0kunT7WdKGDeN6jMGhaQDzBOaza"
+    ],
+    "publishdate": "20.02.2022",
+    "songcount": 18,
+    "length": "1 Stunde",
+    "instrumental": 14,
+    "songs": [
+      "THE BASS IS IMPORTANT",
+      "WANTED - MR. MILLER 01",
+      "RADIO ACTIVITY",
+      "I'LL MISS YOU",
+      "HAPPY MORNING",
+      "SMOKELESS ZONE",
+      "BANDCOACHING",
+      "WEISS",
+      "BLUE BIRD",
+      "SCHWARZ",
+      "WANTED - MR. MILLER 02",
+      "IT'S A PITY!",
+      "BLINKING LIGHTS",
+      "SAX GUY",
+      "FUNK!",
+      "FINE",
+      "WANTED - MR. MILLER 03",
+      "GOOD BYE!"
+    ]
+  },
+  "schwarz": {
+    "name": "SCHWARZ",
+    "albumcover": "07_SCHWARZ_200x200.jpg",
+    "streamingplatforms": [
+      "YouTube"
+    ],
+    "streaminglinks": [
+      "https://youtube.com/playlist?list=PLtiN0t0kunT4xhFMxyBelCcwxG54CwGze"
+    ],
+    "publishdate": "24.12.2021",
+    "songcount": 2,
+    "length": "8 Minuten",
+    "instrumental": 2,
+    "songs": [
+      "SCHWARZ",
+      "CHILL"
+    ]
+  },
+  "weiss": {
+    "name": "WEISS",
+    "albumcover": "06_WEISS_200x200.jpg",
+    "streamingplatforms": [
+      "YouTube"
+    ],
+    "streaminglinks": [
+      "https://youtube.com/playlist?list=PLtiN0t0kunT7TOYR2OYUlABEXOIfcVMUO"
+    ],
+    "publishdate": "28.11.2021",
+    "songcount": 1,
+    "length": "4 Minuten",
+    "instrumental": 1,
+    "songs": [
+      "WEISS"
+    ]
+  },
+  "deep-space": {
+    "name": "Deep Space",
+    "albumcover": "05_DeepSpace_200x200.jpg",
+    "streamingplatforms": [
+      "YouTube"
+    ],
+    "streaminglinks": [
+      "https://youtube.com/playlist?list=PLtiN0t0kunT7j_Rlfg10yzTYouAMiwXm_"
+    ],
+    "publishdate": "31.03.2021",
+    "songcount": 1,
+    "length": "2 Minuten",
+    "instrumental": 1,
+    "songs": [
+      "Deep Space"
+    ]
+  },
+  "im-weltall": {
+    "name": "Im Weltall",
+    "albumcover": "04_ImWeltall_200x200.jpg",
+    "streamingplatforms": [
+      "YouTube"
+    ],
+    "streaminglinks": [
+      "https://youtube.com/playlist?list=PLtiN0t0kunT7QdPVEI1lNNhnMU2pRqClg"
+    ],
+    "publishdate": "20.03.2021",
+    "songcount": 18,
+    "length": "1 Stunde, 26 Minuten",
+    "instrumental": 16,
+    "songs": [
+      "Intro (Owner Of A Lonely Heart) - Im Weltall",
+      "Im Weltall",
+      "Pachelbel",
+      "Take on Me - Mix",
+      "Cover All unsaid",
+      "Cover Sixteen Saltines",
+      "Cover Slow Dancing in a Burning Room",
+      "Im Weltall - Song Nr. 1",
+      "Im Weltall - Song Nr. 2",
+      "Im Weltall - Song Nr. 3",
+      "Im Weltall - Song Nr. 4",
+      "Im Weltall - Song Nr. 5",
+      "Im Weltall - Song Nr. 6",
+      "Im Weltall - Song Nr. 7",
+      "Im Weltall - Song Nr. 8",
+      "Spaziergang",
+      "Drum Session",
+      "Outro - Im Weltall"
+    ]
+  },
   "soundbox": {
     "name": "Soundbox",
     "albumcover": "03_Soundbox_200x200.jpg",

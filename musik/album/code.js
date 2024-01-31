@@ -8,9 +8,7 @@ async function replace() {
     await fetch('./albumdata.json')
         .then((response) => response.json())
         .then((json) => albumdata = json);
-
     album = getURLparams().get("album");
-    console.log (album);
 
     document.title = albumdata[album].name + " | Rummelbude";
     document.getElementById("name").innerHTML = albumdata[album].name;
