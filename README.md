@@ -9,9 +9,12 @@ Unterstütze das Projekt jetzt! Schau dir [die neue Website](https://rummelbude.
     * **index.html**: Übersichtsseite für die Veröffentlichungsdaten der Alben
 * images: Beinhaltet für die Website verwendete Bilder
 * musik
+    * album
+      * **albumdata.json**: Daten zu den Alben in einer Datei
+      * **code.js**: JavaScript-Code für die Albumseite
+      * **index.html**: Albumseite
     * **index.html**: Musikübersichtsseite
     * **style.css**: Style für die Musikseiten
-    * **\[album\].html**: Albumseite
 * newsletter
     * **index.html**: Übersichtsseite für den Newsletter (Anmeldung, Datenschutzhinweise & Informationen)
 * support
