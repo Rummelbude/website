@@ -50,3 +50,35 @@ a {
 .infotableleft {
     width: 230px;
 }
+
+#bottom-spacer {
+    height: 135px;
+}
+
+#footer {
+    height: 125px;
+    width: 100%;
+    background-color: #666666;
+    left: 0;
+    right: 0;
+    padding: 8px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: fixed;
+    bottom: 0;
+}
+
+#footertable {
+    border-collapse: collapse;
+    width: 100%;
+    th, td {
+        border: 5px solid transparent;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+.tableheading {
+    background-color: #303233;
+}
