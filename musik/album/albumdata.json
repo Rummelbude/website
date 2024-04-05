@@ -1,4 +1,31 @@
 {
+  "2nd-episode": {
+    "name": "2ND EPISODE",
+    "albumcover": "18_2NDEPISODE_200x200.jpeg",
+    "streamingplatforms": [
+      "YouTube",
+      "SoundCloud"
+    ],
+    "streaminglinks": [
+      "https://youtube.com/playlist?list=PLtiN0t0kunT7ZQbuQ6CnmP3m91q6AQGhk",
+      "https://soundcloud.com/rummelbude_musik/sets/2nd-episode"
+    ],
+    "publishdate": "01.04.2024",
+    "songcount": 9,
+    "length": "39 Minuten",
+    "instrumental": 7,
+    "songs": [
+      "2ND EPISODE",
+      "Chariots Of Fire (Original by Vangelis)",
+      "ERIS",
+      "Inner Light (Original by Elderbrook and Bob Moses)",
+      "KREIS",
+      "MORODER - pt. 1+2",
+      "Sad guitar",
+      "Stand by Me (Original by Ben E. King)",
+      "You & Me (Flume Remix) (Original by Disclosure)"
+    ]
+  },
   "moroder": {
     "name": "MORODER",
     "albumcover": "17_MORODER_200x200.jpeg",
