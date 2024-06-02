@@ -1,7 +1,7 @@
 {
   "2nd-episode": {
     "name": "2ND EPISODE",
-    "albumcover": "18_2NDEPISODE_200x200.jpeg",
+    "id": "18_2NDEPISODE",
     "streamingplatforms": [
       "YouTube",
       "SoundCloud"
@@ -28,7 +28,7 @@
   },
   "moroder": {
     "name": "MORODER",
-    "albumcover": "17_MORODER_200x200.jpeg",
+    "id": "17_MORODER",
     "streamingplatforms": [
       "YouTube",
       "SoundCloud"
@@ -48,7 +48,7 @@
   },
   "hello": {
     "name": "HELLo",
-    "albumcover": "16_HELLo_200x200.jpg",
+    "id": "16_HELLo",
     "streamingplatforms": [
       "YouTube"
     ],
@@ -84,7 +84,7 @@
   },
   "pluto": {
     "name": "PLUTO",
-    "albumcover": "15_PLUTO_200x200.jpg",
+    "id": "15_PLUTO",
     "streamingplatforms": [
       "YouTube"
     ],
@@ -103,7 +103,7 @@
   },
   "verkehrt": {
     "name": "VERKEHRT",
-    "albumcover": "14_VERKEHRT_200x200.jpg",
+    "id": "14_VERKEHRT",
     "streamingplatforms": [
       "YouTube"
     ],
@@ -122,7 +122,7 @@
   },
   "kreativ-ii": {
     "name": "KREATIV II",
-    "albumcover": "13_KREATIVII_200x200.jpg",
+    "id": "13_KREATIVII",
     "streamingplatforms": [
       "YouTube"
     ],
@@ -139,7 +139,7 @@
   },
   "chaos": {
     "name": "CHAOS",
-    "albumcover": "12_CHAOS_200x200.jpg",
+    "id": "12_CHAOS",
     "streamingplatforms": [
       "YouTube"
     ],
@@ -166,7 +166,7 @@
   },
   "kunst": {
     "name": "KUNST (feat. Hybrix)",
-    "albumcover": "11_KUNST_200x200.jpg",
+    "id": "11_KUNST",
     "streamingplatforms": [
       "YouTube",
       "Spotify"
@@ -186,7 +186,7 @@
   },
   "geometrie": {
     "name": "GEOMETRIE",
-    "albumcover": "10_GEOMETRIE_200x200.jpg",
+    "id": "10_GEOMETRIE",
     "streamingplatforms": [
       "YouTube"
     ],
@@ -213,7 +213,7 @@
   },
   "happy-birthday": {
     "name": "HAPPY BIRTDAY",
-    "albumcover": "09_HAPPYBIRTHDAY_200x200.jpg",
+    "id": "09_HAPPYBIRTHDAY",
     "streamingplatforms": [
       "YouTube"
     ],
@@ -231,7 +231,7 @@
   },
   "wanted": {
     "name": "WANTED",
-    "albumcover": "08_WANTED_200x200.jpg",
+    "id": "08_WANTED",
     "streamingplatforms": [
       "YouTube"
     ],
@@ -265,7 +265,7 @@
   },
   "schwarz": {
     "name": "SCHWARZ",
-    "albumcover": "07_SCHWARZ_200x200.jpg",
+    "id": "07_SCHWARZ",
     "streamingplatforms": [
       "YouTube"
     ],
@@ -283,7 +283,7 @@
   },
   "weiss": {
     "name": "WEISS",
-    "albumcover": "06_WEISS_200x200.jpg",
+    "id": "06_WEISS",
     "streamingplatforms": [
       "YouTube"
     ],
@@ -300,7 +300,7 @@
   },
   "deep-space": {
     "name": "Deep Space",
-    "albumcover": "05_DeepSpace_200x200.jpg",
+    "id": "05_DeepSpace",
     "streamingplatforms": [
       "YouTube"
     ],
@@ -317,7 +317,7 @@
   },
   "im-weltall": {
     "name": "Im Weltall",
-    "albumcover": "04_ImWeltall_200x200.jpg",
+    "id": "04_ImWeltall",
     "streamingplatforms": [
       "YouTube"
     ],
@@ -351,7 +351,7 @@
   },
   "soundbox": {
     "name": "Soundbox",
-    "albumcover": "03_Soundbox_200x200.jpg",
+    "id": "03_Soundbox",
     "streamingplatforms": [
       "Website (+Download)"
     ],
@@ -376,7 +376,7 @@
   },
   "adventszauber-2020": {
     "name": "Adventszauber 2020",
-    "albumcover": "03_SoundboxAdventszauber_200x200.jpg",
+    "id": "03_SoundboxAdventszauber",
     "streamingplatforms": [
       "Website (+Download)"
     ],
@@ -397,7 +397,7 @@
   },
   "alles-banane": {
     "name": "Alles Banane",
-    "albumcover": "02_AllesBanane_200x200.jpg",
+    "id": "02_AllesBanane",
     "streamingplatforms": [
       "Website (+Download)"
     ],
@@ -423,7 +423,7 @@
   },
   "instrumenten-misch": {
     "name": "Instrumenten Misch",
-    "albumcover": "01_InstrumentenMisch_200x200.jpg",
+    "id": "01_InstrumentenMisch",
     "streamingplatforms": [
       "Website (+Download)"
     ],

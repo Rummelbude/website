@@ -12,7 +12,7 @@ async function replace() {
 
     document.title = albumdata[album].name + " | Rummelbude";
     document.getElementById("name").innerHTML = albumdata[album].name;
-    document.getElementById("albumcover").src = "../../images/albums/200x200/" + albumdata[album].albumcover;
+    document.getElementById("albumcover").src = "../../images/albums/" + albumdata[album].id + ".jpg";
 
     document.getElementById("streamingheader").innerHTML = albumdata[album].name + " streamen";
     document.getElementById("streamingplatforms").innerHTML = albumdata[album].streamingplatforms;
