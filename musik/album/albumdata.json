@@ -1,4 +1,23 @@
 {
+  "lost": {
+    "name": "LOST",
+    "id": "19_LOST",
+    "streamingplatforms": [
+      "YouTube",
+      "SoundCloud"
+    ],
+    "streaminglinks": [
+      "https://youtube.com/playlist?list=PLtiN0t0kunT5fPhAC_SeQz8CSEil5LFj0",
+      "https://soundcloud.com/rummelbude_musik/lost"
+    ],
+    "publishdate": "02.09.2024",
+    "songcount": 1,
+    "length": "4 Minuten, 15 Sekunden",
+    "instrumental": 1,
+    "songs": [
+      "LOST"
+    ]
+  },
   "2nd-episode": {
     "name": "2ND EPISODE",
     "id": "18_2NDEPISODE",
