@@ -11,29 +11,38 @@
         <h1>Rummelbude/<a href="../../">Website</a>/<a href="../../musik">Musik</a>/<span id="name">Album</span></h1>
         <img class="album" id="albumcover" src="../../images/logo/logo.png" alt="albumcover">
         <h2 id="streamingheader">Album streamen</h2>
-        <span id="streamingplatforms"></span><br>
-        <span id="streaminglinks"></span>
+        <div id="streamingcontainer"></div>
         <h2>Infos</h2>
-        <table class="infotable">
+        <table class="infotable" id="generalinfostable">
             <tr>
                 <th class="infotableleft">Veröffentlichungsdatum</th>
-                <th><span id="publishdate"></span></th>
+                <th><span class="infotableright" id="publishdate"></span></th>
             </tr>
             <tr>
-                <th>Songanzahl</th>
-                <th><span id="songcount"></span></th>
+                <th class="infotableleft">Songanzahl</th>
+                <th><span class="infotableright" id="songcount"></span></th>
             </tr>
             <tr>
-                <th>Länge</th>
-                <th><span id="length"></span></th>
+                <th class="infotableleft">Länge</th>
+                <th><span class="infotableright" id="length"></span></th>
             </tr>
             <tr>
-                <th>Instrumental</th>
-                <th><span id="instrumental"></span></th>
+                <th class="infotableleft">Instrumental</th>
+                <th><span class="infotableright" id="instrumental"></span></th>
             </tr>
         </table>
         <h2>Songs</h2>
-        <span id="songs"></span>
+        <table class="infotable" id="songtable">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Song Name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- Rows will be dynamically added here -->
+            </tbody>
+        </table>
         <div id="bottom-spacer"></div>
     </body>
 </html>

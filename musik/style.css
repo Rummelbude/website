@@ -2,6 +2,27 @@ body {
     background-color: #1a1a1a;
     font-family: "Courier New", serif;
     color: white;
+    text-align: center;
+}
+
+button {
+    background-color: black;
+    border-radius: 10px;
+    font-family: "Courier New", serif;
+    color: white;
+    border: none;
+    width: 135px;
+    height: 40px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 white;
+    transition-duration: 0.4s;
+    margin-bottom: 13px;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 white;
 }
 
 a {
@@ -34,13 +55,14 @@ a {
     box-shadow: 0 2px 4px 0 dimgray, 0 6px 10px 0 dimgray;
 }
 
-#albumstable {
-    width: 900px;
-}
-
 .infotable {
-    width: 480px;
+    margin: 0 auto;
+    width: fit-content;
     text-align: left;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 white;
+    padding: 10px;
 }
 
 .infotablenumber {
@@ -49,6 +71,15 @@ a {
 
 .infotableleft {
     width: 230px;
+    font-weight: bold;
+}
+
+.infotableright {
+    font-weight: normal;
+}
+
+.numbercell {
+    font-weight: bold;
 }
 
 #bottom-spacer {
