@@ -3,16 +3,20 @@ body {
     font-family: "Courier New", serif;
     color: white;
     text-align: center;
+    font-size: 2.5vmin;
 }
 
 button {
     background-color: black;
     border-radius: 10px;
     font-family: "Courier New", serif;
+    font-size: 2.5vmin;
     color: white;
     border: none;
-    width: 135px;
-    height: 40px;
+    width: 25vmin;
+    height: auto;
+    min-height: 7vmin;
+    padding: 12px;
     cursor: pointer;
     box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 white;
     transition-duration: 0.4s;
@@ -30,8 +34,8 @@ a {
 }
 
 .album {
-    height: 200px;
-    width: 200px;
+    height: 30vmin;
+    width: 30vmin;
     border-radius: 10px;
     box-shadow: 0 2px 4px 0 black, 0 3px 10px 0 black;
 }
@@ -43,8 +47,8 @@ a {
 }
 
 .albums {
-    height: 200px;
-    width: 200px;
+    height: 30vmin;
+    width: 30vmin;
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 0 2px 4px 0 black, 0 3px 10px 0 black;

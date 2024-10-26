@@ -3,6 +3,7 @@ body {
     font-family: "Courier New", serif;
     color: white;
     text-align: center;
+    font-size: 2.5vmin;
 }
 
 #logo {
@@ -10,14 +11,21 @@ body {
     width: 100px;
 }
 
+#headertext {
+    margin-top: 0;
+}
+
 button {
     background-color: black;
     border-radius: 10px;
     font-family: "Courier New", serif;
+    font-size: 2.5vmin;
     color: white;
     border: none;
-    width: 135px;
-    height: 40px;
+    width: 25vmin;
+    height: auto;
+    min-height: 7vmin;
+    padding: 12px;
     cursor: pointer;
     box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 white;
     transition-duration: 0.4s;
@@ -35,11 +43,17 @@ a {
 }
 
 #calendar {
-    width: 500px;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
+    th {
+        padding-left: 1.5vmin;
+        padding-right: 1.5vmin;
+    }
 }
 
 .platformicon {
-    width: 28px;
-    height: 28px;
+    width: 4vmin;
+    height: 4vmin;
     cursor: pointer;
 }
