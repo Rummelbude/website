@@ -1,16 +1,20 @@
+const album = getURLparams().get("album");
+
 function redirect(url) {
     window.location.href = url;
 }
 
+function goToAlbumcover() {
+    window.location.href = "albumcover/?album=" + encodeURIComponent(album);
+}
+
 async function insertData() {
     let albumdata;
-    let album;
 
     // Get the album data
     await fetch('./albumdata.json')
         .then((response) => response.json())
         .then((json) => albumdata = json);
-    album = getURLparams().get("album");
 
     // Insert name and picture
     document.title = albumdata[album].name + " | Rummelbude";

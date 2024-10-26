@@ -38,6 +38,15 @@ a {
     width: 30vmin;
     border-radius: 10px;
     box-shadow: 0 2px 4px 0 black, 0 3px 10px 0 black;
+    cursor: pointer;
+}
+
+.bigalbum {
+    height: 80vmin;
+    width: 80vmin;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 white;
 }
 
 .streams {
@@ -57,6 +66,10 @@ a {
 
 .albums:hover {
     box-shadow: 0 2px 4px 0 dimgray, 0 6px 10px 0 dimgray;
+}
+
+.hint {
+    font-size: small;
 }
 
 .infotable {
