@@ -31,14 +31,14 @@ async function insertData() {
         };
 
         document.getElementById('streamingcontainer').appendChild(button);
-        document.getElementById('streamingcontainer').appendChild(document.createElement("br"));
+        //document.getElementById('streamingcontainer').appendChild(document.createElement("br"));
     });
 
     // Insert general information
     document.getElementById("publishdate").innerHTML = albumdata[album].publishdate;
     document.getElementById("songcount").innerHTML = albumdata[album].songcount;
     document.getElementById("length").innerHTML = albumdata[album].length;
-    document.getElementById("instrumental").innerHTML = albumdata[album].instrumental + "/" + albumdata[album].songcount;
+    document.getElementById("instrumental").innerHTML = albumdata[album].instrumental + " von " + albumdata[album].songcount;
 
     // Insert song list
     const tableBody = document.querySelector('#songtable tbody');

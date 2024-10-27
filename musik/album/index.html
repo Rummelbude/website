@@ -4,48 +4,54 @@
         <meta charset="UTF-8">
         <title>Album | Rummelbude</title>
         <link rel="icon" type="image/x-icon" href="../../images/logo/logo-trans-small.png">
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../../style.css">
         <link rel="stylesheet" href="../../footer/style.css">
         <script src="code.js"></script>
         <script src="../../footer/code.js"></script>
     </head>
-        <body>
+    <body>
         <h1>Rummelbude/<a href="../../">Website</a>/<a href="../../musik">Musik</a>/<span id="name">Album</span></h1>
         <img class="album" id="albumcover" src="../../images/logo/logo.png" alt="albumcover" onclick="goToAlbumcover()">
         <p class="hint">Zum Vergrößern auf Bild tippen</p>
-        <h2 id="streamingheader">Album streamen</h2>
-        <div id="streamingcontainer"></div>
-        <h2>Infos</h2>
-        <table class="infotable" id="generalinfostable">
-            <tr>
-                <th class="infotableleft">Veröffentlichungsdatum</th>
-                <th><span class="infotableright" id="publishdate"></span></th>
-            </tr>
-            <tr>
-                <th class="infotableleft">Songanzahl</th>
-                <th><span class="infotableright" id="songcount"></span></th>
-            </tr>
-            <tr>
-                <th class="infotableleft">Länge</th>
-                <th><span class="infotableright" id="length"></span></th>
-            </tr>
-            <tr>
-                <th class="infotableleft">Instrumental</th>
-                <th><span class="infotableright" id="instrumental"></span></th>
-            </tr>
-        </table>
-        <h2>Songs</h2>
-        <table class="infotable" id="songtable">
-            <thead>
-            <tr>
-                <th>#</th>
-                <th>Song Name</th>
-            </tr>
-            </thead>
-            <tbody>
-            <!-- Rows will be dynamically added here -->
-            </tbody>
-        </table>
+        <div class="contentdiv">
+            <h2 class="texttop" id="streamingheader">Album streamen</h2>
+            <div id="streamingcontainer"></div>
+        </div>
+        <div class="contentdiv">
+            <h2 class="texttop">Infos</h2>
+            <table class="infotable" id="generalinfostable">
+                <tr>
+                    <th class="infotableleft">Datum</th>
+                    <th><span class="infotableright" id="publishdate"></span></th>
+                </tr>
+                <tr>
+                    <th class="infotableleft">Songanzahl</th>
+                    <th><span class="infotableright" id="songcount"></span></th>
+                </tr>
+                <tr>
+                    <th class="infotableleft">Länge</th>
+                    <th><span class="infotableright" id="length"></span></th>
+                </tr>
+                <tr>
+                    <th class="infotableleft">Instrumental</th>
+                    <th><span class="infotableright" id="instrumental"></span></th>
+                </tr>
+            </table>
+        </div>
+        <div class="contentdiv">
+            <h2 class="texttop">Songs</h2>
+            <table class="infotable" id="songtable">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name des Songs</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!-- Rows will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
         <div id="bottom-spacer"></div>
     </body>
 </html>

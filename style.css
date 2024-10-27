@@ -1,9 +1,13 @@
 body {
-    background-color: #1a1a1a;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(56,0,0,1) 50%, rgba(0,0,0,1) 100%);
     font-family: "Courier New", serif;
     color: white;
     text-align: center;
     font-size: 2.5vmin;
+}
+
+.hint {
+    font-size: small;
 }
 
 #logo {
@@ -27,28 +31,58 @@ button {
     min-height: 7vmin;
     padding: 12px;
     cursor: pointer;
-    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 white;
+    box-shadow: 0 0.5vmin 1vmin 0 black, 0 6px 2vmin 0 white;
     transition-duration: 0.4s;
-    margin-bottom: 13px;
+    margin: 13px;
 }
 
 button:hover {
     background-color: white;
     color: black;
-    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 white;
+    box-shadow: 0 0.5vmin 1vmin 0 black, 0 6px 2vmin 0 white;
 }
 
 a {
     color: white;
 }
 
+.contentdiv {
+    margin: 5vmin auto;
+    /*width: fit-content;*/
+    max-width: calc(100% - 20vmin);
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+    /*box-shadow: 0 2px 4px 0 black, 0 3px 10px 0 black;*/
+    box-shadow: 0 0.5vmin 1vmin 0 black, 0 0.6vmin 1.5vmin 0 white;
+    padding: 2vmin;
+
+    .texttop {
+        margin-top: 0;
+    }
+    .textbottom {
+        margin-bottom: 0;
+    }
+}
+
 #calendar {
     width: fit-content;
     max-width: 100%;
     margin: 0 auto;
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 white;
+    padding: 10px;
     th {
         padding-left: 1.5vmin;
         padding-right: 1.5vmin;
+    }
+    .texttop {
+        margin-top: 0;
+    }
+    .textbottom {
+        margin-bottom: 0;
     }
 }
 
@@ -56,4 +90,72 @@ a {
     width: 4vmin;
     height: 4vmin;
     cursor: pointer;
+}
+
+.album {
+    height: 30vmin;
+    width: 30vmin;
+    border-radius: 10px;
+    box-shadow: 0 0.5vmin 1vmin 0 black, 0 0.6vmin 1.5vmin 0 white;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.album:hover {
+    box-shadow: 0 0.5vmin 1vmin 0 black, 0 6px 2vmin 0 white;
+}
+
+.bigalbum {
+    height: 80vmin;
+    width: 80vmin;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0.5vmin 1vmin 0 black, 0 6px 2vmin 0 white;
+}
+
+.streams {
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+
+.albums {
+    height: 30vmin;
+    width: 30vmin;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0.5vmin 1vmin 0 black, 0 0.6vmin 1.5vmin 0 black;
+    transition-duration: 0.4s;
+}
+
+.albums:hover {
+    box-shadow: 0 2px 4px 0 dimgray, 0 6px 10px 0 dimgray;
+}
+
+.infotable {
+    margin: 0 auto;
+    width: fit-content;
+    text-align: left;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0.5vmin 1vmin 0 black, 0 0.6vmin 1.5vmin 0 white;
+
+    padding: 10px;
+}
+
+.infotablenumber {
+    width: 25px;
+}
+
+.infotableleft {
+    width: 230px;
+    font-weight: bold;
+}
+
+.infotableright {
+    font-weight: normal;
+}
+
+.numbercell {
+    font-weight: bold;
 }

@@ -10,6 +10,7 @@ async function insertData() {
         .then((response) => response.json())
         .then((json) => albumdata = json);
 
+    document.title = albumdata[album].name + "-Cover | Rummelbude";
     document.getElementById("albumcover").src = "../../../images/albums/" + albumdata[album].id + ".jpg";
 }
 
