@@ -7,10 +7,11 @@
         <link rel="stylesheet" href="../../style.css">
         <link rel="stylesheet" href="../../footer/style.css">
         <script src="code.js"></script>
+        <script src="../../code.js"></script>
         <script src="../../footer/code.js"></script>
     </head>
     <body>
-        <h1>Rummelbude/<a href="../../">Website</a>/<a href="../../musik">Musik</a>/<span id="name">Album</span></h1>
+        <div id="header"><h1><a href="../../">Startseite</a>/<a href="../../musik">Musik</a>/<span id="name">Album</span></h1></div>
         <img class="album" id="albumcover" src="../../images/logo/logo.png" alt="albumcover" onclick="goToAlbumcover()">
         <p class="hint">Zum Vergrößern auf Bild tippen</p>
         <div class="contentdiv">
@@ -41,12 +42,6 @@
         <div class="contentdiv">
             <h2 class="texttop">Songs</h2>
             <table class="infotable" id="songtable">
-                <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Name des Songs</th>
-                </tr>
-                </thead>
                 <tbody>
                 <!-- Rows will be dynamically added here -->
                 </tbody>

@@ -1,9 +1,5 @@
 const album = getURLparams().get("album");
 
-function redirect(url) {
-    window.location.href = url;
-}
-
 function goToAlbumcover() {
     window.location.href = "albumcover/?album=" + encodeURIComponent(album);
 }

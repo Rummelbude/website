@@ -6,6 +6,17 @@ body {
     font-size: 2.5vmin;
 }
 
+#headertext {
+    margin-top: 0;
+}
+
+#header {
+    margin: auto;
+    max-width: calc(100% - 20vmin);
+    text-align: center;
+    padding: 0 2vmin;
+}
+
 .hint {
     font-size: small;
 }
@@ -13,10 +24,6 @@ body {
 #logo {
     height: 100px;
     width: 100px;
-}
-
-#headertext {
-    margin-top: 0;
 }
 
 button {
@@ -48,12 +55,10 @@ a {
 
 .contentdiv {
     margin: 5vmin auto;
-    /*width: fit-content;*/
     max-width: calc(100% - 20vmin);
     text-align: center;
     background-color: black;
     border-radius: 10px;
-    /*box-shadow: 0 2px 4px 0 black, 0 3px 10px 0 black;*/
     box-shadow: 0 0.5vmin 1vmin 0 black, 0 0.6vmin 1.5vmin 0 white;
     padding: 2vmin;
 
