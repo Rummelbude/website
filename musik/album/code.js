@@ -27,7 +27,6 @@ async function insertData() {
         };
 
         document.getElementById('streamingcontainer').appendChild(button);
-        //document.getElementById('streamingcontainer').appendChild(document.createElement("br"));
     });
 
     // Insert general information

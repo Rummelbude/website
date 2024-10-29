@@ -164,3 +164,23 @@ a {
 .numbercell {
     font-weight: bold;
 }
+
+#socialMediaTable {
+    margin: 0 auto;
+    width: calc(100% - 20vmin);
+    text-align: center;
+
+    .row {
+        margin: 5vmin auto;
+        text-align: center;
+        background-color: black;
+        border-radius: 10px;
+        box-shadow: 0 0.5vmin 1vmin 0 black, 0 0.6vmin 1.5vmin 0 white;
+        padding: 2vmin;
+
+        .platformicon {
+            padding-right: 2vmin;
+            vertical-align: middle;
+        }
+    }
+}

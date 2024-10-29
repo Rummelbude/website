@@ -1,0 +1,22 @@
+{
+  "website": {
+    "name": "Website",
+    "link": "https://rummelbude.github.io/website"
+  },
+  "youtube": {
+    "name": "YouTube",
+    "link": "https://www.youtube.com/@rummelbude_musik?sub_confirmation=1"
+  },
+  "soundcloud": {
+    "name": "SoundCloud",
+    "link": "https://www.soundcloud.com/rummelbude_musik"
+  },
+  "instagram": {
+    "name": "Instagram",
+    "link": "https://www.instagram.com/rummelbude_musik"
+  },
+  "spotify": {
+    "name": "Spotify",
+    "link": "https://open.spotify.com/artist/3jALLbtdonhfbGK6xyVnXq"
+  }
+}
