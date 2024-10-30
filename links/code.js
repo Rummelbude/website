@@ -6,10 +6,18 @@ async function insertData() {
         .then((response) => response.json())
         .then((json) => links = json);
 
-    const tableBody = document.getElementById('socialMediaTable').querySelector('tbody');
+    const insertionDiv = document.getElementById('socialMediaPlatforms');
     for (const key in links) {
         if (links.hasOwnProperty(key)) {
             const { name, link } = links[key];
+
+            // Create the wrapper div with the class "tablediv"
+            const tableDiv = document.createElement('div');
+            tableDiv.className = 'tablediv';
+
+            // Create table
+            const table = document.createElement('table');
+            const tableBody = document.createElement('tbody');
 
             // Create row
             const row = document.createElement('tr');
@@ -37,8 +45,14 @@ async function insertData() {
             rowDiv.className = "row";
             rowDiv.appendChild(row);
             tableBody.appendChild(rowDiv);
+            table.appendChild(tableBody);
+
+            // Append the table to the tableDiv, then append the tableDiv to insertionDiv
+            tableDiv.appendChild(table);
+            insertionDiv.appendChild(tableDiv);
         }
     }
+
 }
 
 insertData();
