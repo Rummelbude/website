@@ -18,5 +18,9 @@
   "spotify": {
     "name": "Spotify",
     "link": "https://open.spotify.com/artist/3jALLbtdonhfbGK6xyVnXq"
+  },
+  "github": {
+    "name": "GitHub",
+    "link": "https://open.spotify.com/artist/3jALLbtdonhfbGK6xyVnXq"
   }
 }

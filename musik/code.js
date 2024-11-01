@@ -5,23 +5,45 @@ async function loadAlbums() {
 
         const container = document.getElementById('albumsContainer');
 
+        const albumsByYear = {};
+
         for (let albumName in albums) {
             const album = albums[albumName];
+            const publishdate = album.publishdate;
+            const year = publishdate.split('.')[2];
 
-            // Create the <a> element with the link
-            const albumLink = document.createElement('a');
-            albumLink.href = `album/?album=${albumName.toLowerCase()}`; // convert albumName to lowercase for URL
+            if (!albumsByYear[year]) {
+                albumsByYear[year] = [];
+            }
+            albumsByYear[year].push({ albumName, ...album });
+        }
 
-            // Create the <img> element
-            const albumImage = document.createElement('img');
-            albumImage.classList.add('albums');
-            albumImage.id = album.name; // e.g., "LOST"
-            albumImage.src = `../images/albums/200x200/${album.id}_200x200.jpg`; // image source
-            albumImage.alt = album.name; // image alt text
+        const sortedYears = Object.keys(albumsByYear).sort((a, b) => b - a);
 
-            // Append the image to the link, then the link to the container
-            albumLink.appendChild(albumImage);
-            container.appendChild(albumLink);
+        for (let year of sortedYears) {
+            const yearDiv = document.createElement('div');
+            yearDiv.className = 'contentdiv';
+
+            const yearHeader = document.createElement('h2');
+            yearHeader.textContent = year;
+            yearHeader.className = 'texttop';
+            yearDiv.appendChild(yearHeader);
+
+            for (let album of albumsByYear[year]) {
+                const albumLink = document.createElement('a');
+                albumLink.href = `album/?album=${album.albumName.toLowerCase()}`;
+
+                const albumImage = document.createElement('img');
+                albumImage.classList.add('albums');
+                albumImage.id = album.name;
+                albumImage.src = `../images/albums/200x200/${album.id}_200x200.jpg`;
+                albumImage.alt = album.name;
+
+                albumLink.appendChild(albumImage);
+                yearDiv.appendChild(albumLink);
+            }
+
+            container.appendChild(yearDiv);
         }
     } catch (error) {
         console.error("Error loading albums:", error);
