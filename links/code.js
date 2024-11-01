@@ -55,4 +55,6 @@ async function insertData() {
 
 }
 
-insertData();
+document.addEventListener("DOMContentLoaded", () => {
+    insertData();
+});

@@ -131,6 +131,7 @@ a {
     cursor: pointer;
     box-shadow: 0 0.5vmin 1vmin 0 black, 0 0.6vmin 1.5vmin 0 black;
     transition-duration: 0.4s;
+    margin: 0.75vmin;
 }
 
 .albums:hover {

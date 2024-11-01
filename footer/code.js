@@ -3,7 +3,7 @@ document.write('\
     <div id="footer">\
             <table id="footertable">\
                 <tr id="tableheading">\
-                    <th>Links</th>\
+                    <a href="/website/links"><th>Links</th></a>\
                     <th>Navigation</th>\
                     <th>Rechtliches</th>\
                 </tr>\

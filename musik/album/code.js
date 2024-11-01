@@ -23,7 +23,7 @@ async function insertData() {
         const button = document.createElement('button');
         button.innerHTML = platform;
         button.onclick = function() {
-            redirect(albumdata[album].streaminglinks[index]);
+            window.location.href = albumdata[album].streaminglinks[index];
         };
 
         document.getElementById('streamingcontainer').appendChild(button);
@@ -61,4 +61,6 @@ function getURLparams() {
     return(urlParams);
 }
 
-insertData()
+document.addEventListener("DOMContentLoaded", () => {
+    insertData();
+});
