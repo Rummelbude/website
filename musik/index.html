@@ -5,15 +5,19 @@
         <title>Musik | Rummelbude</title>
         <link rel="icon" type="image/x-icon" href="../images/logo/logo-trans-small.png">
         <link rel="stylesheet" href="../style.css">
-        <link rel="stylesheet" href="../footer/style.css">
+        <link rel="stylesheet" href="../resources/footer/style.css">
         <script src="code.js"></script>
-        <script src="../footer/code.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <div id="header"><h1><a href="../">Rummelbude</a>/Musik</h1></div>
         <div id="albumsContainer">
             <!--Clickable album covers will be dynamically added here-->
         </div>
-        <div id="bottom-spacer"></div>
+        <script>
+            fetch('../resources/footer/index.html')
+                .then(response => response.text())
+                .then(data => document.querySelector('body').innerHTML += data);
+        </script>
     </body>
 </html>

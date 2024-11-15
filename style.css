@@ -22,7 +22,7 @@ body {
     font-family: "Courier Prime", "Courier New", Courier, monospace, serif;
     color: white;
     text-align: center;
-    font-size: 2.5vmin;
+    font-size: 4vmin;
 }
 
 #headertext {
@@ -49,13 +49,13 @@ button {
     background-color: black;
     border-radius: 10px;
     font-family: "Courier Prime", "Courier New", Courier, monospace, serif;
-    font-size: 2.5vmin;
+    font-size: 4vmin;
     color: white;
     border: none;
-    width: 25vmin;
+    min-width: 25vmin;
     height: auto;
     min-height: 7vmin;
-    padding: 12px;
+    padding: 17px 20px;
     cursor: pointer;
     box-shadow: 0 0.5vmin 1vmin 0 black, 0 6px 2vmin 0 white;
     transition-duration: 0.4s;
