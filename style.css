@@ -25,6 +25,47 @@ body {
     font-size: 4vmin;
 }
 
+#menubutton {
+    position: fixed;
+    top: 5vmin;
+    right: 5vmin;
+    height: 10vmin;
+
+    cursor: pointer;
+}
+
+#menu {
+    display: none;
+
+    position: fixed;
+    left: 5vmin;
+    right: 5vmin;
+    top: 5vmin;
+    bottom: 5vmin;
+
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0.5vmin 1vmin 0 black, 0 0.6vmin 1.5vmin 0 white;
+    padding: 2vmin;
+
+    #closebutton {
+        position: fixed;
+        top: 8vmin;
+        right: 8vmin;
+        height: 10vmin;
+
+        cursor: pointer;
+    }
+
+    .texttop {
+        margin-top: 0;
+    }
+    .textbottom {
+        margin-bottom: 0;
+    }
+}
+
 #headertext {
     margin-top: 0;
 }

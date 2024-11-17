@@ -7,9 +7,16 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="resources/footer/style.css">
         <script src="code.js"></script>
+        <script src="resources/navigation/code.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <img id="menubutton" src="resources/navigation/menu-button.svg" alt="Menü" onclick="navigationControl('block')">
+        <div id="menu">
+            <img id="closebutton" src="resources/navigation/exit-button.svg" alt="Schließen" onclick="navigationControl('none')">
+            <h1>Navigation</h1>
+            <a href="/website"><button>Startseite</button></a><a href="/website/musik"><button>Musik</button></a><a href="/website/diskografie"><button>Diskografie</button></a><a href="/website/support"><button>Support</button></a><a href="/website/links"><button>Links</button></a>
+        </div>
         <div id="header">
             <img id="logo" src="images/logo/logo-trans.png" alt="logo">
             <h1 id="headertext">Rummelbude</h1>
