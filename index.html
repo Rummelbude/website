@@ -6,6 +6,7 @@
         <link rel="icon" type="image/x-icon" href="images/logo/logo-trans-small.png">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="resources/footer/style.css">
+        <script src="code.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
@@ -21,13 +22,9 @@
             <h2 class="texttop">Über mich</h2>
             <p class="textbottom">Ich bin Rummelbude, ein leidenschaftlicher Einzelkünstler, der seit 2019 Musik für die Publikation produziert.</p>
         </div>
-        <div class="contentdiv">
-            <h2 class="texttop">Plattformen</h2>
-            <img src="images/youtube-white.webp" alt="YouTube" class="platformicon" id="youtubeicon" onclick=window.open("https://www.youtube.com/@rummelbude_musik")>
-            <img src="images/instagram-white.webp" alt="Instagram" class="platformicon" id="instagramicon" onclick=window.open("https://www.instagram.com/rummelbude_musik")>
-            <img src="images/github-white.webp" alt="GitHub" class="platformicon" id="githubicon" onclick=window.open("https://github.com/Rummelbude")>
-            <img src="images/spotify-white.webp" alt="Spotify" class="platformicon" id="spotifyicon" onclick=window.open("https://open.spotify.com/artist/3jALLbtdonhfbGK6xyVnXq")>
-            <img src="images/soundcloud-white.webp" alt="Soundcloud" class="platformicon" id="soundcloudicon" onclick=window.open("https://soundcloud.com/rummelbude_musik")>
+        <div class="contentdiv" id="albumsContainer">
+            <h2 class="texttop">Neue Musik</h2>
+            <!--Clickable album covers will be dynamically added here-->
         </div>
         <script>
             fetch('resources/footer/index.html')

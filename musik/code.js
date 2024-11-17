@@ -1,6 +1,6 @@
 async function loadAlbums() {
     try {
-        const response = await fetch('album/albumdata.json');
+        const response = await fetch('../resources/albums/albumdata.json');
         const albums = await response.json();
 
         const container = document.getElementById('albumsContainer');

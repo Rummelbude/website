@@ -6,7 +6,7 @@ function goback() {
 
 async function insertData() {
     let albumdata;
-    await fetch('./../albumdata.json')
+    await fetch('../../../resources/albums/albumdata.json')
         .then((response) => response.json())
         .then((json) => albumdata = json);
 

@@ -8,7 +8,7 @@ async function insertData() {
     let albumdata;
 
     // Get the album data
-    await fetch('./albumdata.json')
+    await fetch('../../resources/albums/albumdata.json')
         .then((response) => response.json())
         .then((json) => albumdata = json);
 
