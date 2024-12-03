@@ -7,17 +7,23 @@
       <link rel="stylesheet" href="../style.css">
       <link rel="stylesheet" href="../resources/footer/style.css">
       <script src="code.js"></script>
+      <script src="../resources/navigation/code.js"></script>
       <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <div id="header"><h1><a href="../">Rummelbude</a>/Links</h1></div>
-    <div id="socialMediaPlatforms">
-        <!--Social media platform tables will be dynamically added here-->
-    </div>
-    <script>
-        fetch('../resources/footer/index.html')
-            .then(response => response.text())
-            .then(data => document.querySelector('body').innerHTML += data);
-    </script>
+      <script>
+          fetch('../resources/navigation/index.html')
+              .then(response => response.text())
+              .then(data => document.querySelector('body').innerHTML += data);
+      </script>
+      <div id="header"><h1><a href="../">Rummelbude</a>/Links</h1></div>
+      <div id="socialMediaPlatforms">
+          <!--Social media platform tables will be dynamically added here-->
+      </div>
+      <script>
+          fetch('../resources/footer/index.html')
+              .then(response => response.text())
+              .then(data => document.querySelector('body').innerHTML += data);
+      </script>
   </body>
 </html>

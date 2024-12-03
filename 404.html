@@ -7,9 +7,15 @@
         <link rel="stylesheet" href="/website/style.css">
         <link rel="stylesheet" href="/website/resources/footer/style.css">
         <script src="/website/code.js"></script>
+        <script src="/website/resources/navigation/code.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <script>
+            fetch('/website/resources/navigation/index.html')
+                .then(response => response.text())
+                .then(data => document.querySelector('body').innerHTML += data);
+        </script>
         <div><h1><a href="/website">Rummelbude</a>/404</h1></div>
         <div class="contentdiv">
             <p class="texttop">Die Seite, die du suchst, existiert nicht. Kehre jetzt zur <a href="/website">Startseite</a> zurück.</p>

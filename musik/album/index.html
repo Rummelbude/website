@@ -7,9 +7,15 @@
         <link rel="stylesheet" href="../../style.css">
         <link rel="stylesheet" href="../../resources/footer/style.css">
         <script src="code.js"></script>
+        <script src="../../resources/navigation/code.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <script>
+            fetch('../../resources/navigation/index.html')
+                .then(response => response.text())
+                .then(data => document.querySelector('body').innerHTML += data);
+        </script>
         <div id="header"><h1><a href="../../">Rummelbude</a>/<a href="../../musik">Musik</a>/<span id="name">Album</span></h1></div>
         <img class="album" id="albumcover" src="../../images/logo/logo.png" alt="albumcover" onclick="goToAlbumcover()">
         <p class="hint">Zum Vergrößern auf Bild tippen</p>

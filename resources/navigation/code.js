@@ -2,14 +2,14 @@ function navigationControl(display) {
     document.getElementById("menu").style.display = display;
 }
 
-async function insertData() {
+async function insertLinks() {
     let links;
 
     await fetch('/website/links/links.json')
         .then((response) => response.json())
         .then((json) => links = json);
 
-    const insertionDiv = document.getElementById('socialMediaPlatforms');
+    const insertionDiv = document.getElementById('navigationSocialMedia');
     for (const key in links) {
         if (links.hasOwnProperty(key)) {
             const { name, link } = links[key];
@@ -28,5 +28,5 @@ async function insertData() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    insertData();
+    insertLinks();
 });
