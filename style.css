@@ -73,6 +73,8 @@ body {
 
 #headertext {
     margin-top: 0;
+    word-break: break-all;
+    overflow-wrap: break-word;
 }
 
 #header {
@@ -237,6 +239,16 @@ a {
 
 .albums:hover {
     box-shadow: 0 0.5vmin 1vmin 0 black, 0 6px 2vmin 0 white;
+}
+
+.albumdate {
+    margin: 0;
+    font-size: smaller;
+}
+
+.albumLink {
+    display: inline-block;
+    text-decoration: none;
 }
 
 .infotable {

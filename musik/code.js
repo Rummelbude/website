@@ -31,6 +31,7 @@ async function loadAlbums() {
 
             for (let album of albumsByYear[year]) {
                 const albumLink = document.createElement('a');
+                albumLink.className = 'albumLink';
                 albumLink.href = `album/?album=${album.albumName.toLowerCase()}`;
 
                 const albumImage = document.createElement('img');
@@ -39,7 +40,14 @@ async function loadAlbums() {
                 albumImage.src = `../images/albums/200x200/${album.id}_200x200.jpg`;
                 albumImage.alt = album.name;
 
+                const albumDate = document.createElement('p');
+                albumDate.classList.add('albumdate');
+                albumDate.id = album.name + 'date';
+                const dateParts = album.publishdate.split('.');
+                albumDate.textContent = `${dateParts[0]}.${dateParts[1]}.`;
+
                 albumLink.appendChild(albumImage);
+                albumLink.appendChild(albumDate);
                 yearDiv.appendChild(albumLink);
             }
 
