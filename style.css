@@ -44,10 +44,15 @@ body {
     bottom: 5vmin;
 
     text-align: center;
+    font-size: smaller;
     background-color: black;
     border-radius: 10px;
     box-shadow: 0 0.5vmin 1vmin 0 black, 0 0.6vmin 1.5vmin 0 white;
     padding: 2vmin;
+
+    button {
+        font-size: smaller;
+    }
 
     #closebutton {
         position: fixed;
@@ -68,6 +73,8 @@ body {
 
 #headertext {
     margin-top: 0;
+    word-break: break-all;
+    overflow-wrap: break-word;
 }
 
 #header {
@@ -86,27 +93,63 @@ body {
     width: 100px;
 }
 
+/* Thanks to milegelu for the button design template */
+/* >   https://uiverse.io/milegelu/tough-cobra-42    */
 button {
-    background-color: black;
-    border-radius: 10px;
-    font-family: "Courier Prime", "Courier New", Courier, monospace, serif;
-    font-size: 4vmin;
-    color: white;
-    border: none;
-    min-width: 25vmin;
-    height: auto;
-    min-height: 7vmin;
-    padding: 17px 20px;
+    --bezier: cubic-bezier(0.22, 0.61, 0.36, 1);
+    --edge-light: hsla(0, 0%, 50%, 0.8);
+    --text-light: rgba(255, 255, 255, 0.4);
+
     cursor: pointer;
-    box-shadow: 0 0.5vmin 1vmin 0 black, 0 6px 2vmin 0 white;
-    transition-duration: 0.4s;
-    margin: 13px;
+    padding: 0.7em 1em;
+    margin: 1vmin;
+    border-radius: 0.5em;
+    min-height: 2.4em;
+    min-width: 3em;
+    align-items: center;
+    gap: 0.5em;
+
+    font-size: 4vmin;
+    font-family: "Courier Prime", "Courier New", Courier, monospace, serif;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    font-weight: bold;
+
+    background: linear-gradient(
+            140deg,
+            hsla(var(--back-color), 50%, 1) min(2em, 20%),
+            hsla(var(--back-color), 50%, 0.6) min(8em, 100%)
+    );
+    color: hsla(0, 0%, 90%);
+    border: 0;
+    box-shadow: inset 0.4px 1px 4px var(--edge-light);
+
+    transition: all 0.1s var(--bezier);
 }
 
 button:hover {
-    background-color: white;
-    color: black;
-    box-shadow: 0 0.5vmin 1vmin 0 black, 0 6px 2vmin 0 white;
+    --edge-light: hsla(0, 0%, 50%, 1);
+    --back-color: 1, 70%;
+    text-shadow: 0px 0px 10px var(--text-light);
+    box-shadow: inset 0.4px 1px 4px var(--edge-light),
+    2px 4px 8px hsla(0, 0%, 0%, 0.295);
+    transform: scale(1.1);
+}
+
+button:active {
+    --text-light: rgba(255, 255, 255, 1);
+
+    background: linear-gradient(
+            140deg,
+            hsla(var(--back-color), 50%, 1) min(2em, 20%),
+            hsla(var(--back-color), 50%, 0.6) min(8em, 100%)
+    );
+    box-shadow: inset 0.4px 1px 8px var(--edge-light),
+    0px 0px 8px hsla(var(--back-color), 50%, 0.6);
+    text-shadow: 0px 0px 20px var(--text-light);
+    color: hsla(0, 0%, 100%, 1);
+    letter-spacing: 0.1em;
+    transform: scale(1);
 }
 
 a {
@@ -196,6 +239,16 @@ a {
 
 .albums:hover {
     box-shadow: 0 0.5vmin 1vmin 0 black, 0 6px 2vmin 0 white;
+}
+
+.albumdate {
+    margin: 0;
+    font-size: smaller;
+}
+
+.albumLink {
+    display: inline-block;
+    text-decoration: none;
 }
 
 .infotable {

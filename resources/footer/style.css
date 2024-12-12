@@ -2,6 +2,7 @@
     margin: 10vmin auto;
     max-width: calc(100% - 20vmin);
     text-align: center;
+    font-size: small;
     background-color: #270000;
     border-radius: 10px;
     box-shadow: 0 0.5vmin 1vmin 0 black, 0 0.6vmin 1.5vmin 0 white;
@@ -13,26 +14,8 @@
     .textbottom {
         margin-bottom: 0;
     }
-}
 
-#footertable {
-    border-collapse: collapse;
-    min-width: calc(100% - 40vmin);
-    max-width: calc(100% - 20vmin);
-    margin: 8px auto;
-    font-size: small;
-    th, td {
-        border: 5px solid transparent;
+    button {
+        font-size: small;
     }
-    a {
-        text-decoration: none;
-    }
-}
-
-#tableheading {
-    font-size: large;
-}
-
-#bottom-spacer {
-    height: 150px;
 }
