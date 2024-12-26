@@ -1,4 +1,23 @@
 {
+  "ducks-crossing": {
+    "name": "Ducks Crossing",
+    "id": "20_DucksCrossing",
+    "streamingplatforms": [
+      "YouTube",
+      "SoundCloud"
+    ],
+    "streaminglinks": [
+      "https://www.youtube.com/playlist?list=PLtiN0t0kunT6W8GjiqGgWAW8T9Rbmt6SJ",
+      "https://soundcloud.com/rummelbude_musik/ducks-crossing"
+    ],
+    "publishdate": "26.12.2024",
+    "songcount": 1,
+    "length": "4 Minuten, 6 Sekunden",
+    "instrumental": 1,
+    "songs": [
+      "Ducks Crossing"
+    ]
+  },
   "lost": {
     "name": "LOST",
     "id": "19_LOST",
