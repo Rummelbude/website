@@ -1,5 +1,16 @@
 function navigationControl(display) {
     document.getElementById("menu").style.display = display;
+
+    function handleEsc(event) {
+        if (event.key === 'Escape') {
+            document.getElementById("menu").style.display = "none";
+            document.removeEventListener('keydown', handleEsc);
+        }
+    }
+
+    if (display === "block") {
+        document.addEventListener('keydown', handleEsc);
+    }
 }
 
 async function insertLinks() {
