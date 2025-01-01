@@ -29,6 +29,23 @@ async function insertData() {
         document.getElementById('streamingcontainer').appendChild(button);
     });
 
+    // Insert clickable video thumbnail if a video exists
+    if (albumdata[album].video.exists === true) {
+        console.log("Video exists");
+        const videothumbnailcontainer = document.getElementById("videothumbnailcontainer");
+        const videothumbnail = document.createElement("img");
+        videothumbnail.src = "../../images/albums/videothumbnails/" + albumdata[album].id + "_videothumbnail.jpg";
+        videothumbnail.id = "videothumbnail";
+        videothumbnail.onclick = function() {
+            window.location.href = albumdata[album].video.link;
+        };
+
+        videothumbnailcontainer.appendChild(videothumbnail);
+
+        document.getElementById("videoheader").style.display = "block";
+        videothumbnailcontainer.style.display = "block";
+    }
+
     // Insert general information
     document.getElementById("publishdate").innerHTML = albumdata[album].publishdate;
     document.getElementById("songcount").innerHTML = albumdata[album].songcount;
