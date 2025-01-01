@@ -38,6 +38,6 @@ async function insertLinks() {
 
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function() {
     insertLinks();
 });

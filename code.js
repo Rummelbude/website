@@ -32,6 +32,6 @@ async function loadAlbums() {
     });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function() {
     loadAlbums();
 });

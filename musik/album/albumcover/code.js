@@ -20,6 +20,6 @@ function getURLparams() {
     return(urlParams);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function() {
     insertData();
 });
