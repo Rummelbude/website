@@ -514,3 +514,11 @@ a {
     font-size: 2.5vmin;
     text-align: center;
 }
+
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+    body, .contentdiv, button, .infotable, .tablediv {
+        font-size: 3vmin;
+        font-family: "Courier Bold", "Courier Prime", "Courier New", Courier, monospace, serif;
+    }
+}
