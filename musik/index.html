@@ -11,12 +11,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-    <script>
-        fetch('../resources/navigation/index.html')
-            .then(response => response.text())
-            .then(data => document.querySelector('body').innerHTML += data);
-    </script>
-        <div id="header"><h1><a href="../">Rummelbude</a>/Musik</h1></div>
+        <script>
+            fetch('../resources/navigation/index.html')
+                .then(response => response.text())
+                .then(data => document.querySelector('body').innerHTML += data);
+        </script>
+        <div id="topSpacer"></div>
+        <table id="header">
+            <tr>
+                <td id="headerTableLogo"><a href="/website"><img id="logo" src="../images/logo/logo-trans.png" alt="logo"></a></td>
+                <td id="headerTableText"><h1 id="headerText">Musik</h1></td>
+                <td id="headerTableMenu">
+                    <input id="headerMenuButton" type="checkbox" onclick="navigationControl()">
+                    <label class="toggle" for="headerMenuButton">
+                        <div id="bar1" class="bars"></div>
+                        <div id="bar2" class="bars"></div>
+                        <div id="bar3" class="bars"></div>
+                    </label>
+                </td>
+            </tr>
+        </table>
         <div id="albumsContainer">
             <!--Clickable album covers will be dynamically added here-->
         </div>

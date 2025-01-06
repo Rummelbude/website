@@ -16,17 +16,28 @@
                 .then(response => response.text())
                 .then(data => document.querySelector('body').innerHTML += data);
         </script>
-        <div id="header">
-            <img id="logo" src="images/logo/logo-trans.png" alt="logo">
-            <h1 id="headertext">Rummelbude</h1>
-        </div>
+        <div id="topSpacer"></div>
+        <table id="header">
+            <tr>
+                <td id="headerTableLogo"><img id="logo" src="images/logo/logo-trans.png" alt="logo"></td>
+                <td id="headerTableText"><h1 id="headerText">Rummelbude</h1></td>
+                <td id="headerTableMenu">
+                    <input id="headerMenuButton" type="checkbox" onclick="navigationControl()">
+                    <label class="toggle" for="headerMenuButton">
+                        <div id="bar1" class="bars"></div>
+                        <div id="bar2" class="bars"></div>
+                        <div id="bar3" class="bars"></div>
+                    </label>
+                </td>
+            </tr>
+        </table>
         <div class="contentdiv">
             <h2 class="texttop">Navigation</h2>
             <a href="musik"><button>Musik</button></a><a href="support"><button>Support</button></a><a href="links"><button>Links</button></a>
         </div>
         <div class="contentdiv">
             <h2 class="texttop">Über mich</h2>
-            <p class="textbottom">Ich bin Rummelbude, ein leidenschaftlicher Einzelkünstler, der seit 2019 Musik für die Publikation produziert.</p>
+            <p class="textBottom">Ich bin Rummelbude, ein leidenschaftlicher Einzelkünstler, der seit 2019 Musik für die Publikation produziert.</p>
         </div>
         <div class="contentdiv" id="albumsContainer">
             <h2 class="texttop">Neue Musik</h2>

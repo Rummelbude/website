@@ -16,7 +16,21 @@
               .then(response => response.text())
               .then(data => document.querySelector('body').innerHTML += data);
       </script>
-      <div id="header"><h1><a href="../">Rummelbude</a>/Links</h1></div>
+      <div id="topSpacer"></div>
+      <table id="header">
+          <tr>
+              <td id="headerTableLogo"><a href="/website"><img id="logo" src="../images/logo/logo-trans.png" alt="logo"></a></td>
+              <td id="headerTableText"><h1 id="headerText">Links</h1></td>
+              <td id="headerTableMenu">
+                  <input id="headerMenuButton" type="checkbox" onclick="navigationControl()">
+                  <label class="toggle" for="headerMenuButton">
+                      <div id="bar1" class="bars"></div>
+                      <div id="bar2" class="bars"></div>
+                      <div id="bar3" class="bars"></div>
+                  </label>
+              </td>
+          </tr>
+      </table>
       <div id="socialMediaPlatforms">
           <!--Social media platform tables will be dynamically added here-->
       </div>

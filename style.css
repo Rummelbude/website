@@ -25,28 +25,29 @@ body {
     font-size: 4vmin;
 }
 
-#menubutton {
-    position: fixed;
-    top: 5vmin;
-    right: 5vmin;
-    height: 10vmin;
-
-    cursor: pointer;
+#topSpacer {
+    height: 17vmin;
 }
 
-#menu {
-    display: none;
+#header {
+    z-index: 1;
 
     position: fixed;
     left: 4vmin;
     right: 4vmin;
     top: 4vmin;
-    bottom: 4vmin;
+    width: calc(100% - 8vmin);
+
+    background: rgb(33,0,0);
+    background: -moz-linear-gradient(90deg, rgba(33,0,0,1) 0%, rgba(27,0,0,1) 50%, rgba(33,0,0,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(33,0,0,1) 0%, rgba(27,0,0,1) 50%, rgba(33,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(33,0,0,1) 0%, rgba(27,0,0,1) 50%, rgba(33,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#210000",endColorstr="#210000",GradientType=1);
 
     text-align: center;
     font-size: smaller;
-    background-color: black;
     padding: 2vmin;
+    vertical-align: middle;
 
     --bezier: cubic-bezier(0.22, 0.61, 0.36, 1);
     --edge-light: hsla(0, 0%, 50%, 0.8);
@@ -65,47 +66,129 @@ body {
     border: 0;
     box-shadow: inset 0.4px 1px 4px var(--edge-light);
 
-    button {
-        font-size: smaller;
+    #headerTableLogo {
+        width: 10vmin;
+        text-align: right;
+    }
+    #headerTableText {
+        text-align: left;
+        #headerText {
+            margin: 0;
+            padding-left: 2vmin;
+        }
+    }
+    #headerTableMenu {
+        width: 10vmin;
+        cursor: pointer;
     }
 
-    #closebutton {
-        position: fixed;
-        top: 8vmin;
-        right: 8vmin;
-        height: 10vmin;
+    #logo {
+        height: 9vmin;
+    }
 
+    /* Thanks to vinodjangid07 for the menu button design template */
+    /* >      https://uiverse.io/vinodjangid07/tame-eagle-29       */
+    #headerMenuButton {
+        display: none;
+    }
+    .toggle {
+        position: relative;
+        width: 9vmin;
+        height: 9vmin;
         cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        transition-duration: .3s;
+    }
+    .bars {
+        width: 60%;
+        height: 4px;
+        background-color: rgb(253, 255, 243);
+        border-radius: 5px;
+        transition-duration: .3s;
+    }
+    #headerMenuButton:checked + .toggle #bar2 {
+        transform: translateY(14px) rotate(60deg);
+        margin-left: 0;
+        transform-origin: right;
+        transition-duration: .3s;
+        z-index: 2;
+    }
+    #headerMenuButton:checked + .toggle #bar1 {
+        transform: translateY(28px) rotate(-60deg);
+        transition-duration: .3s;
+        transform-origin: left;
+        z-index: 1;
+    }
+    #headerMenuButton:checked + .toggle {
+        transform: rotate(-90deg);
+    }
+}
+
+#menu {
+    z-index: 1;
+    display: none;
+
+    position: fixed;
+    left: 4vmin;
+    right: 4vmin;
+    top: 17vmin;
+
+    text-align: center;
+    font-size: smaller;
+    padding: 2vmin;
+
+    background: rgb(33,0,0);
+    background: -moz-linear-gradient(90deg, rgba(33,0,0,1) 0%, rgba(27,0,0,1) 50%, rgba(33,0,0,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(33,0,0,1) 0%, rgba(27,0,0,1) 50%, rgba(33,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(33,0,0,1) 0%, rgba(27,0,0,1) 50%, rgba(33,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#210000",endColorstr="#210000",GradientType=1);
+
+    --bezier: cubic-bezier(0.22, 0.61, 0.36, 1);
+    --edge-light: hsla(0, 0%, 50%, 0.8);
+    --text-light: rgba(255, 255, 255, 0.4);
+
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    align-items: center;
+    gap: 0.5em;
+
+    font-family: "Courier Prime", "Courier New", Courier, monospace, serif;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    font-weight: bold;
+
+    color: hsla(0, 0%, 90%);
+    border: 0;
+    box-shadow: inset 0.4px 1px 4px var(--edge-light), 2px 150px 200px #000000;
+
+    transition: all .2s linear;
+
+    button {
+        font-size: smaller;
     }
 
     .texttop {
         margin-top: 0;
     }
-    .textbottom {
+    .textBottom, h2 {
         margin-bottom: 0;
     }
 }
 
-#headertext {
-    margin-top: 0;
-    word-break: break-all;
-    overflow-wrap: break-word;
+.hidden {
+    display: none;
 }
 
-#header {
-    margin: auto;
-    max-width: calc(100% - 20vmin);
-    text-align: center;
-    padding: 0 2vmin;
+.visuallyHidden {
+    opacity: 0;
 }
 
 .hint {
     font-size: small;
-}
-
-#logo {
-    height: 100px;
-    width: 100px;
 }
 
 /* Thanks to milegelu for the button design template */
@@ -199,7 +282,7 @@ a {
     .texttop {
         margin-top: 0;
     }
-    .textbottom {
+    .textBottom {
         margin-bottom: 0;
     }
 }
@@ -220,7 +303,7 @@ a {
     .texttop {
         margin-top: 0;
     }
-    .textbottom {
+    .textBottom {
         margin-bottom: 0;
     }
 }
@@ -429,4 +512,5 @@ a {
 
 .asciiArt {
     font-size: 2.5vmin;
+    text-align: center;
 }
