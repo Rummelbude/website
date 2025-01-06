@@ -11,33 +11,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <script>
-            fetch('/website/resources/navigation/index.html')
-                .then(response => response.text())
-                .then(data => document.querySelector('body').innerHTML += data);
-        </script>
-        <div id="topSpacer"></div>
-        <table id="header">
-            <tr>
-                <td id="headerTableLogo"><a href="/website"><img id="logo" src="/website/images/logo/logo-trans.png" alt="logo"></a></td>
-                <td id="headerTableText"><h1 id="headerText"></h1><p class="asciiArt">
-                    ██╗``██╗`██████╗`██╗``██╗<br>
-                    ██║``██║██╔═████╗██║``██║<br>
-                    ███████║██║██╔██║███████║<br>
-                    ╚════██║████╔╝██║╚════██║<br>
-                    `````██║╚██████╔╝`````██║<br>
-                    `````╚═╝`╚═════╝``````╚═╝<br>
-                </p></td>
-                <td id="headerTableMenu">
-                    <input id="headerMenuButton" type="checkbox" onclick="navigationControl()">
-                    <label class="toggle" for="headerMenuButton">
-                        <div id="bar1" class="bars"></div>
-                        <div id="bar2" class="bars"></div>
-                        <div id="bar3" class="bars"></div>
-                    </label>
-                </td>
-            </tr>
-        </table>
+        <p class="asciiArt">
+            ██╗``██╗`██████╗`██╗``██╗<br>
+            ██║``██║██╔═████╗██║``██║<br>
+            ███████║██║██╔██║███████║<br>
+            ╚════██║████╔╝██║╚════██║<br>
+            `````██║╚██████╔╝`````██║<br>
+            `````╚═╝`╚═════╝``````╚═╝<br>
+        </p>
         <div class="contentdiv">
             <p class="texttop">Die Seite, die du suchst, existiert nicht. Kehre jetzt zur <a href="/website">Startseite</a> zurück.</p>
             <p>Solltest du auf diese Seite weitergeleitet worden sein, kontaktiere bitte den <a href="/website/support">Rummelbude-Support</a>.</p>
