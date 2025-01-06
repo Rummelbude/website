@@ -9,8 +9,8 @@ async function loadAlbums() {
 
         for (let albumName in albums) {
             const album = albums[albumName];
-            const publishdate = album.publishdate;
-            const year = publishdate.split('.')[2];
+            const publishDate = album.publishdate;
+            const year = publishDate.split('.')[2];
 
             if (!albumsByYear[year]) {
                 albumsByYear[year] = [];

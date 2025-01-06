@@ -1,60 +1,59 @@
-const album = getURLparams().get("album");
+const album = getQueryString().get("album");
 
 function goToAlbumcover() {
     window.location.href = "albumcover/?album=" + encodeURIComponent(album);
 }
 
 async function insertData() {
-    let albumdata;
+    let albumData;
 
     // Get the album data
     await fetch('../../resources/albums/albumdata.json')
         .then((response) => response.json())
-        .then((json) => albumdata = json);
+        .then((json) => albumData = json);
 
     // Insert name and picture
-    document.title = albumdata[album].name + " | Rummelbude";
-    document.getElementById("name").innerHTML = albumdata[album].name;
-    document.getElementById("albumcover").src = "../../images/albums/" + albumdata[album].id + ".jpg";
+    document.title = albumData[album].name + " | Rummelbude";
+    document.getElementById("name").innerHTML = albumData[album].name;
+    document.getElementById("albumcover").src = "../../images/albums/" + albumData[album].id + ".jpg";
 
     // Insert streaming links
-    document.getElementById("streamingheader").innerHTML = albumdata[album].name + " streamen";
-    albumdata[album].streamingplatforms.forEach((platform, index) => {
+    document.getElementById("streamingheader").innerHTML = albumData[album].name + " streamen";
+    albumData[album].streamingplatforms.forEach((platform, index) => {
         const button = document.createElement('button');
         button.innerHTML = platform;
         button.onclick = function() {
-            window.location.href = albumdata[album].streaminglinks[index];
+            window.location.href = albumData[album].streaminglinks[index];
         };
 
         document.getElementById('streamingcontainer').appendChild(button);
     });
 
     // Insert clickable video thumbnail if a video exists
-    if (albumdata[album].video.exists === true) {
-        console.log("Video exists");
-        const videothumbnailcontainer = document.getElementById("videothumbnailcontainer");
-        const videothumbnail = document.createElement("img");
-        videothumbnail.src = "../../images/albums/videothumbnails/" + albumdata[album].id + "_videothumbnail.jpg";
-        videothumbnail.id = "videothumbnail";
-        videothumbnail.onclick = function() {
-            window.location.href = albumdata[album].video.link;
+    if (albumData[album].video.exists === true) {
+        const videoThumbnailContainer = document.getElementById("videothumbnailcontainer");
+        const videoThumbnail = document.createElement("img");
+        videoThumbnail.src = "../../images/albums/videothumbnails/" + albumData[album].id + "_videothumbnail.jpg";
+        videoThumbnail.id = "videothumbnail";
+        videoThumbnail.onclick = function() {
+            window.location.href = albumData[album].video.link;
         };
 
-        videothumbnailcontainer.appendChild(videothumbnail);
+        videoThumbnailContainer.appendChild(videoThumbnail);
 
         document.getElementById("videoheader").style.display = "block";
-        videothumbnailcontainer.style.display = "block";
+        videoThumbnailContainer.style.display = "block";
     }
 
     // Insert general information
-    document.getElementById("publishdate").innerHTML = albumdata[album].publishdate;
-    document.getElementById("songcount").innerHTML = albumdata[album].songcount;
-    document.getElementById("length").innerHTML = albumdata[album].length;
-    document.getElementById("instrumental").innerHTML = albumdata[album].instrumental + " von " + albumdata[album].songcount;
+    document.getElementById("publishdate").innerHTML = albumData[album].publishdate;
+    document.getElementById("songcount").innerHTML = albumData[album].songcount;
+    document.getElementById("length").innerHTML = albumData[album].length;
+    document.getElementById("instrumental").innerHTML = albumData[album].instrumental + " von " + albumData[album].songcount;
 
     // Insert song list
     const tableBody = document.querySelector('#songtable tbody');
-    albumdata[album].songs.forEach((song, index) => {
+    albumData[album].songs.forEach((song, index) => {
         const row = document.createElement('tr');
 
         const numberCell = document.createElement('td');
@@ -72,10 +71,8 @@ async function insertData() {
     });
 }
 
-function getURLparams() {
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
-    return(urlParams);
+function getQueryString() {
+    return(new URLSearchParams(window.location.search));
 }
 
 document.addEventListener("DOMContentLoaded", function() {

@@ -1,23 +1,21 @@
-const album = getURLparams().get("album");
+const album = getQueryString().get("album");
 
-function goback() {
+function goBack() {
     window.location.href = "../?album=" + encodeURIComponent(album);
 }
 
 async function insertData() {
-    let albumdata;
+    let albumData;
     await fetch('../../../resources/albums/albumdata.json')
         .then((response) => response.json())
-        .then((json) => albumdata = json);
+        .then((json) => albumData = json);
 
-    document.title = albumdata[album].name + "-Cover | Rummelbude";
-    document.getElementById("albumcover").src = "../../../images/albums/" + albumdata[album].id + ".jpg";
+    document.title = albumData[album].name + "-Cover | Rummelbude";
+    document.getElementById("albumcover").src = "../../../images/albums/" + albumData[album].id + ".jpg";
 }
 
-function getURLparams() {
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
-    return(urlParams);
+function getQueryString() {
+    return(new URLSearchParams(window.location.search));
 }
 
 document.addEventListener("DOMContentLoaded", function() {
