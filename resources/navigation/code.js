@@ -75,7 +75,7 @@ async function adjustMenuPosition() {
     const topSpacer = document.getElementById("topSpacer");
 
     const menuOffset = vminToPx(4);
-    const spacerAddition = vminToPx(8);
+    const spacerAddition = vminToPx(4);
 
     menu.style.top = `${header.offsetHeight + menuOffset}px`;
     topSpacer.style.height = `${header.offsetHeight + spacerAddition}px`;
@@ -95,6 +95,14 @@ function vminToPx(vminValue) {
     return pxValue;
 }
 
+function debounce(func, delay) {
+    let timer;
+    return function(...args) {
+        clearTimeout(timer);
+        timer = setTimeout(() => func.apply(this, args), delay);
+    };
+}
+
 // Initialize page
 document.addEventListener("DOMContentLoaded", function() {
     const checkElementsAndInitialize = setInterval(() => {
@@ -107,6 +115,8 @@ document.addEventListener("DOMContentLoaded", function() {
             insertLinks();
             adjustMenuPosition();
             clearInterval(checkElementsAndInitialize);
+
+            window.addEventListener('resize', debounce(adjustMenuPosition, 100));
         }
     }, 100);
 });
