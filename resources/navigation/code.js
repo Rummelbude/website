@@ -67,8 +67,6 @@ async function insertLinks() {
             insertionDiv.appendChild(linkElement);
         }
     }
-
-    adjustMenuPosition();
 }
 
 async function adjustMenuPosition() {
@@ -97,6 +95,18 @@ function vminToPx(vminValue) {
     return pxValue;
 }
 
+// Initialize page
 document.addEventListener("DOMContentLoaded", function() {
-    insertLinks();
+    const checkElementsAndInitialize = setInterval(() => {
+        const navSocialMedia = document.getElementById("navigationSocialMedia");
+        const header = document.getElementById("header");
+        const menu = document.getElementById("menu");
+        const topSpacer = document.getElementById("topSpacer");
+
+        if (navSocialMedia && header && menu && topSpacer) {
+            insertLinks();
+            adjustMenuPosition();
+            clearInterval(checkElementsAndInitialize);
+        }
+    }, 100);
 });
