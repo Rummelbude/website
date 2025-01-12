@@ -255,7 +255,7 @@ a {
     color: white;
 }
 
-.contentdiv {
+.contentDiv {
     margin: 5vmin auto;
     max-width: calc(100% - 20vmin);
     text-align: center;
@@ -309,13 +309,13 @@ a {
     }
 }
 
-.platformicon {
+.platformIcon {
     width: 4vmin;
     height: 4vmin;
     cursor: pointer;
 }
 
-.bigalbum {
+.bigAlbum {
     height: 80vmin;
     width: 80vmin;
     max-width: 100%;
@@ -340,7 +340,7 @@ a {
     cursor: pointer;
 }
 
-.videostreaming {
+.videoStreaming {
     display: none;
 }
 
@@ -348,7 +348,7 @@ a {
     margin: 0 auto;
 }
 
-#videothumbnail {
+#videoThumbnail {
     height: 18vmin;
     cursor: pointer;
 
@@ -368,7 +368,7 @@ a {
     transition: all 0.1s var(--bezier);
 }
 
-#videothumbnail:hover {
+#videoThumbnail:hover {
     --edge-light: hsla(0, 0%, 50%, 1);
     --back-color: 1, 70%;
     text-shadow: 0px 0px 10px var(--text-light);
@@ -377,7 +377,7 @@ a {
     transform: scale(1.1);
 }
 
-#videothumbnail:active {
+#videoThumbnail:active {
     transform: scale(1);
 }
 
@@ -415,7 +415,7 @@ a {
     transform: scale(1);
 }
 
-.albumdate {
+.albumDate {
     margin: 0;
     font-size: smaller;
 }
@@ -425,7 +425,7 @@ a {
     text-decoration: none;
 }
 
-.infotable {
+.infoTable {
     margin: 0 auto;
     width: fit-content;
     text-align: left;
@@ -454,20 +454,20 @@ a {
     transition: all 0.1s var(--bezier);
 }
 
-.infotablenumber {
+.infoTableNumber {
     width: 25px;
 }
 
-.infotableleft {
+.infoTableLeft {
     width: 230px;
     font-weight: bold;
 }
 
-.infotableright {
+.infoTableRight {
     font-weight: normal;
 }
 
-.numbercell {
+.numberCell {
     font-weight: bold;
 }
 
@@ -476,7 +476,7 @@ a {
     width: calc(100% - 20vmin);
     text-align: center;
 
-    .tablediv {
+    .tableDiv {
         margin: 5vmin auto;
         text-align: center;
         background-color: black;
@@ -505,7 +505,7 @@ a {
         margin: 0 auto;
     }
 
-    .platformicon {
+    .platformIcon {
         padding-right: 2vmin;
         vertical-align: middle;
     }
@@ -518,7 +518,7 @@ a {
 
 /* For Desktop View */
 @media screen and (min-width: 1024px) {
-    body, .contentdiv, button, .infotable, .tablediv {
+    body, .contentDiv, button, .infoTable, .tableDiv {
         font-size: 3vmin;
         font-family: "Courier Bold", "Courier Prime", "Courier New", Courier, monospace, serif;
     }

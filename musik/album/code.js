@@ -1,67 +1,67 @@
 const album = getQueryString().get("album");
 
-function goToAlbumcover() {
-    window.location.href = "albumcover/?album=" + encodeURIComponent(album);
+function goToAlbumCover() {
+    window.location.href = "cover/?album=" + encodeURIComponent(album);
 }
 
 async function insertData() {
     let albumData;
 
     // Get the album data
-    await fetch('../../resources/albums/albumdata.json')
+    await fetch('../../resources/albums/albumData.json')
         .then((response) => response.json())
         .then((json) => albumData = json);
 
     // Insert name and picture
     document.title = albumData[album].name + " | Rummelbude";
     document.getElementById("name").innerHTML = albumData[album].name;
-    document.getElementById("albumcover").src = "../../images/albums/" + albumData[album].id + ".jpg";
+    document.getElementById("albumCover").src = "../../images/albums/" + albumData[album].id + ".jpg";
 
     // Insert streaming links
-    document.getElementById("streamingheader").innerHTML = albumData[album].name + " streamen";
-    albumData[album].streamingplatforms.forEach((platform, index) => {
+    document.getElementById("streamingHeader").innerHTML = albumData[album].name + " streamen";
+    albumData[album].streamingPlatforms.forEach((platform, index) => {
         const button = document.createElement('button');
         button.innerHTML = platform;
         button.onclick = function() {
-            window.location.href = albumData[album].streaminglinks[index];
+            window.location.href = albumData[album].streamingLinks[index];
         };
 
-        document.getElementById('streamingcontainer').appendChild(button);
+        document.getElementById('streamingContainer').appendChild(button);
     });
 
     // Insert clickable video thumbnail if a video exists
     if (albumData[album].video.exists === true) {
-        const videoThumbnailContainer = document.getElementById("videothumbnailcontainer");
+        const videoThumbnailContainer = document.getElementById("videoThumbnailContainer");
         const videoThumbnail = document.createElement("img");
-        videoThumbnail.src = "../../images/albums/videothumbnails/" + albumData[album].id + "_videothumbnail.jpg";
-        videoThumbnail.id = "videothumbnail";
+        videoThumbnail.src = "../../images/albums/video-thumbnails/" + albumData[album].id + "_videoThumbnail.jpg";
+        videoThumbnail.id = "videoThumbnail";
         videoThumbnail.onclick = function() {
             window.location.href = albumData[album].video.link;
         };
 
         videoThumbnailContainer.appendChild(videoThumbnail);
 
-        document.getElementById("videoheader").style.display = "block";
+        document.getElementById("videoHeader").style.display = "block";
         videoThumbnailContainer.style.display = "block";
     }
 
     // Insert general information
-    document.getElementById("publishdate").innerHTML = albumData[album].publishdate;
-    document.getElementById("songcount").innerHTML = albumData[album].songcount;
+    document.getElementById("publishDate").innerHTML = albumData[album].publishDate;
+    document.getElementById("songCount").innerHTML = albumData[album].songCount;
     document.getElementById("length").innerHTML = albumData[album].length;
-    document.getElementById("instrumental").innerHTML = albumData[album].instrumental + " von " + albumData[album].songcount;
+    document.getElementById("instrumental").innerHTML = albumData[album].instrumental + " von " + albumData[album].songCount;
 
     // Insert song list
-    const tableBody = document.querySelector('#songtable tbody');
+    const tableBody = document.querySelector('#songTable tbody');
     albumData[album].songs.forEach((song, index) => {
         const row = document.createElement('tr');
 
         const numberCell = document.createElement('td');
-        numberCell.className = "numbercell";
+        numberCell.className = "numberCell";
         numberCell.textContent = index + 1;
 
         const nameCell = document.createElement('td');
-        nameCell.className = "namecell";
+        nameCell.className = "nameCell";
         nameCell.textContent = song;
 
         row.appendChild(numberCell);

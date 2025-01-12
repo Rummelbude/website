@@ -2,11 +2,11 @@
   "ducks-crossing": {
     "name": "Ducks Crossing",
     "id": "20_DucksCrossing",
-    "streamingplatforms": [
+    "streamingPlatforms": [
       "YouTube",
       "SoundCloud"
     ],
-    "streaminglinks": [
+    "streamingLinks": [
       "https://www.youtube.com/playlist?list=PLtiN0t0kunT6W8GjiqGgWAW8T9Rbmt6SJ",
       "https://soundcloud.com/rummelbude_musik/ducks-crossing"
     ],
@@ -14,8 +14,8 @@
       "exists": true,
       "link": "https://youtu.be/Gjjw9z29UjQ?si=P3ZZpMko3Z38i7hi"
     },
-    "publishdate": "26.12.2024",
-    "songcount": 1,
+    "publishDate": "26.12.2024",
+    "songCount": 1,
     "length": "4 Minuten, 6 Sekunden",
     "instrumental": 1,
     "songs": [
@@ -25,11 +25,11 @@
   "lost": {
     "name": "LOST",
     "id": "19_LOST",
-    "streamingplatforms": [
+    "streamingPlatforms": [
       "YouTube",
       "SoundCloud"
     ],
-    "streaminglinks": [
+    "streamingLinks": [
       "https://youtube.com/playlist?list=PLtiN0t0kunT5fPhAC_SeQz8CSEil5LFj0",
       "https://soundcloud.com/rummelbude_musik/lost"
     ],
@@ -37,8 +37,8 @@
       "exists": true,
       "link": "https://youtu.be/DdOyPjpCrUQ?si=98UrIdTawwn6bFJR"
     },
-    "publishdate": "02.09.2024",
-    "songcount": 1,
+    "publishDate": "02.09.2024",
+    "songCount": 1,
     "length": "4 Minuten, 15 Sekunden",
     "instrumental": 1,
     "songs": [
@@ -48,11 +48,11 @@
   "2nd-episode": {
     "name": "2ND EPISODE",
     "id": "18_2NDEPISODE",
-    "streamingplatforms": [
+    "streamingPlatforms": [
       "YouTube",
       "SoundCloud"
     ],
-    "streaminglinks": [
+    "streamingLinks": [
       "https://youtube.com/playlist?list=PLtiN0t0kunT7ZQbuQ6CnmP3m91q6AQGhk",
       "https://soundcloud.com/rummelbude_musik/sets/2nd-episode"
     ],
@@ -60,8 +60,8 @@
       "exists": false,
       "link": ""
     },
-    "publishdate": "01.04.2024",
-    "songcount": 9,
+    "publishDate": "01.04.2024",
+    "songCount": 9,
     "length": "39 Minuten",
     "instrumental": 7,
     "songs": [
@@ -79,11 +79,11 @@
   "moroder": {
     "name": "MORODER",
     "id": "17_MORODER",
-    "streamingplatforms": [
+    "streamingPlatforms": [
       "YouTube",
       "SoundCloud"
     ],
-    "streaminglinks": [
+    "streamingLinks": [
       "https://www.youtube.com/playlist?list=PLtiN0t0kunT7G55ZQckgE9QD8rTbw6EEQ",
       "https://soundcloud.com/rummelbude_musik/sets/moroder"
     ],
@@ -91,8 +91,8 @@
       "exists": false,
       "link": ""
     },
-    "publishdate": "28.01.2024",
-    "songcount": 2,
+    "publishDate": "28.01.2024",
+    "songCount": 2,
     "length": "9 Minuten",
     "instrumental": 2,
     "songs": [
@@ -103,18 +103,18 @@
   "hello": {
     "name": "HELLo",
     "id": "16_HELLo",
-    "streamingplatforms": [
+    "streamingPlatforms": [
       "YouTube"
     ],
-    "streaminglinks": [
+    "streamingLinks": [
       "https://youtube.com/playlist?list=PLtiN0t0kunT6yQgQkRNJi985mFC5EBM97"
     ],
     "video": {
       "exists": false,
       "link": ""
     },
-    "publishdate": "18.06.2023",
-    "songcount": 20,
+    "publishDate": "18.06.2023",
+    "songCount": 20,
     "length": "1 Stunde, 20 Minuten",
     "instrumental": 19,
     "songs": [
@@ -143,18 +143,18 @@
   "pluto": {
     "name": "PLUTO",
     "id": "15_PLUTO",
-    "streamingplatforms": [
+    "streamingPlatforms": [
       "YouTube"
     ],
-    "streaminglinks": [
+    "streamingLinks": [
       "https://youtube.com/playlist?list=PLtiN0t0kunT4T26ax4jclc5P2QtyhHYEx"
     ],
     "video": {
       "exists": false,
       "link": ""
     },
-    "publishdate": "28.05.2023",
-    "songcount": 3,
+    "publishDate": "28.05.2023",
+    "songCount": 3,
     "length": "11 Minuten, 38 Sekunden",
     "instrumental": 3,
     "songs": [
@@ -166,18 +166,18 @@
   "verkehrt": {
     "name": "VERKEHRT",
     "id": "14_VERKEHRT",
-    "streamingplatforms": [
+    "streamingPlatforms": [
       "YouTube"
     ],
-    "streaminglinks": [
+    "streamingLinks": [
       "https://youtube.com/playlist?list=PLtiN0t0kunT59fcEYei9s2VR36CHYbXIM"
     ],
     "video": {
       "exists": false,
       "link": ""
     },
-    "publishdate": "08.03.2023",
-    "songcount": 3,
+    "publishDate": "08.03.2023",
+    "songCount": 3,
     "length": "15 Minuten",
     "instrumental": 2,
     "songs": [
@@ -189,18 +189,18 @@
   "kreativ-ii": {
     "name": "KREATIV II",
     "id": "13_KREATIVII",
-    "streamingplatforms": [
+    "streamingPlatforms": [
       "YouTube"
     ],
-    "streaminglinks": [
+    "streamingLinks": [
       "https://youtube.com/playlist?list=PLtiN0t0kunT7j7E2WohJ9xNCS6giJyZVf"
     ],
     "video": {
       "exists": false,
       "link": ""
     },
-    "publishdate": "14.02.2023",
-    "songcount": 1,
+    "publishDate": "14.02.2023",
+    "songCount": 1,
     "length": "6 Minuten",
     "instrumental": 1,
     "songs": [
@@ -210,18 +210,18 @@
   "chaos": {
     "name": "CHAOS",
     "id": "12_CHAOS",
-    "streamingplatforms": [
+    "streamingPlatforms": [
       "YouTube"
     ],
-    "streaminglinks": [
+    "streamingLinks": [
       "https://youtube.com/playlist?list=PLtiN0t0kunT7sdjaYZA5kJj6pMMRzzB25"
     ],
     "video": {
       "exists": false,
       "link": ""
     },
-    "publishdate": "01.01.2023",
-    "songcount": 11,
+    "publishDate": "01.01.2023",
+    "songCount": 11,
     "length": "52 Minuten",
     "instrumental": 11,
     "songs": [
@@ -241,11 +241,11 @@
   "kunst": {
     "name": "KUNST (feat. Hybrix)",
     "id": "11_KUNST",
-    "streamingplatforms": [
+    "streamingPlatforms": [
       "YouTube",
       "Spotify"
     ],
-    "streaminglinks": [
+    "streamingLinks": [
       "https://youtube.com/playlist?list=PLtiN0t0kunT6AbBqNdL9RIkDl-eJgJShi",
       "https://open.spotify.com/album/3cH6hvXtERjdKSTgi1FZMv"
     ],
@@ -253,8 +253,8 @@
       "exists": false,
       "link": ""
     },
-    "publishdate": "26.11.2022",
-    "songcount": 2,
+    "publishDate": "26.11.2022",
+    "songCount": 2,
     "length": "7 Minuten",
     "instrumental": 2,
     "songs": [
@@ -265,18 +265,18 @@
   "geometrie": {
     "name": "GEOMETRIE",
     "id": "10_GEOMETRIE",
-    "streamingplatforms": [
+    "streamingPlatforms": [
       "YouTube"
     ],
-    "streaminglinks": [
+    "streamingLinks": [
       "https://youtube.com/playlist?list=PLtiN0t0kunT7mRsyPq5Aycup62HYjl70_"
     ],
     "video": {
       "exists": false,
       "link": ""
     },
-    "publishdate": "25.05.2022",
-    "songcount": 11,
+    "publishDate": "25.05.2022",
+    "songCount": 11,
     "length": "34 Minuten",
     "instrumental": 11,
     "songs": [
@@ -296,18 +296,18 @@
   "happy-birthday": {
     "name": "HAPPY BIRTDAY",
     "id": "09_HAPPYBIRTHDAY",
-    "streamingplatforms": [
+    "streamingPlatforms": [
       "YouTube"
     ],
-    "streaminglinks": [
+    "streamingLinks": [
       "https://youtube.com/playlist?list=PLtiN0t0kunT457b9X861Id305pI749eB7"
     ],
     "video": {
       "exists": false,
       "link": ""
     },
-    "publishdate": "31.03.2022",
-    "songcount": 2,
+    "publishDate": "31.03.2022",
+    "songCount": 2,
     "length": "6 Minuten",
     "instrumental": 2,
     "songs": [
@@ -318,18 +318,18 @@
   "wanted": {
     "name": "WANTED",
     "id": "08_WANTED",
-    "streamingplatforms": [
+    "streamingPlatforms": [
       "YouTube"
     ],
-    "streaminglinks": [
+    "streamingLinks": [
       "https://youtube.com/playlist?list=PLtiN0t0kunT7WdKGDeN6jMGhaQDzBOaza"
     ],
     "video": {
       "exists": false,
       "link": ""
     },
-    "publishdate": "20.02.2022",
-    "songcount": 18,
+    "publishDate": "20.02.2022",
+    "songCount": 18,
     "length": "1 Stunde",
     "instrumental": 14,
     "songs": [
@@ -356,18 +356,18 @@
   "schwarz": {
     "name": "SCHWARZ",
     "id": "07_SCHWARZ",
-    "streamingplatforms": [
+    "streamingPlatforms": [
       "YouTube"
     ],
-    "streaminglinks": [
+    "streamingLinks": [
       "https://youtube.com/playlist?list=PLtiN0t0kunT4xhFMxyBelCcwxG54CwGze"
     ],
     "video": {
       "exists": false,
       "link": ""
     },
-    "publishdate": "24.12.2021",
-    "songcount": 2,
+    "publishDate": "24.12.2021",
+    "songCount": 2,
     "length": "8 Minuten",
     "instrumental": 2,
     "songs": [
@@ -378,18 +378,18 @@
   "weiss": {
     "name": "WEISS",
     "id": "06_WEISS",
-    "streamingplatforms": [
+    "streamingPlatforms": [
       "YouTube"
     ],
-    "streaminglinks": [
+    "streamingLinks": [
       "https://youtube.com/playlist?list=PLtiN0t0kunT7TOYR2OYUlABEXOIfcVMUO"
     ],
     "video": {
       "exists": false,
       "link": ""
     },
-    "publishdate": "28.11.2021",
-    "songcount": 1,
+    "publishDate": "28.11.2021",
+    "songCount": 1,
     "length": "4 Minuten",
     "instrumental": 1,
     "songs": [
@@ -399,18 +399,18 @@
   "deep-space": {
     "name": "Deep Space",
     "id": "05_DeepSpace",
-    "streamingplatforms": [
+    "streamingPlatforms": [
       "YouTube"
     ],
-    "streaminglinks": [
+    "streamingLinks": [
       "https://youtube.com/playlist?list=PLtiN0t0kunT7j_Rlfg10yzTYouAMiwXm_"
     ],
     "video": {
       "exists": true,
       "link": "https://youtu.be/GzJWp3vxHho?si=Kc_6QpJ1em5GRcJa"
     },
-    "publishdate": "31.03.2021",
-    "songcount": 1,
+    "publishDate": "31.03.2021",
+    "songCount": 1,
     "length": "2 Minuten",
     "instrumental": 1,
     "songs": [
@@ -420,18 +420,18 @@
   "im-weltall": {
     "name": "Im Weltall",
     "id": "04_ImWeltall",
-    "streamingplatforms": [
+    "streamingPlatforms": [
       "YouTube"
     ],
-    "streaminglinks": [
+    "streamingLinks": [
       "https://youtube.com/playlist?list=PLtiN0t0kunT7QdPVEI1lNNhnMU2pRqClg"
     ],
     "video": {
       "exists": false,
       "link": ""
     },
-    "publishdate": "20.03.2021",
-    "songcount": 18,
+    "publishDate": "20.03.2021",
+    "songCount": 18,
     "length": "1 Stunde, 26 Minuten",
     "instrumental": 16,
     "songs": [
@@ -458,18 +458,18 @@
   "soundbox": {
     "name": "Soundbox",
     "id": "03_Soundbox",
-    "streamingplatforms": [
+    "streamingPlatforms": [
       "Website (+Download)"
     ],
-    "streaminglinks": [
+    "streamingLinks": [
       "https://rummelbude.wixsite.com/musik/soundbox"
     ],
     "video": {
       "exists": false,
       "link": ""
     },
-    "publishdate": "01.01.2021",
-    "songcount": 9,
+    "publishDate": "01.01.2021",
+    "songCount": 9,
     "length": "25 Minuten",
     "instrumental": 9,
     "songs": [
@@ -487,18 +487,18 @@
   "adventszauber-2020": {
     "name": "Adventszauber 2020",
     "id": "03_SoundboxAdventszauber",
-    "streamingplatforms": [
+    "streamingPlatforms": [
       "Website (+Download)"
     ],
-    "streaminglinks": [
+    "streamingLinks": [
       "https://rummelbude.wixsite.com/musik/adventszauber-2020"
     ],
     "video": {
       "exists": false,
       "link": ""
     },
-    "publishdate": "29.11.2020",
-    "songcount": 5,
+    "publishDate": "29.11.2020",
+    "songCount": 5,
     "length": "15 Minuten",
     "instrumental": 0,
     "songs": [
@@ -512,18 +512,18 @@
   "alles-banane": {
     "name": "Alles Banane",
     "id": "02_AllesBanane",
-    "streamingplatforms": [
+    "streamingPlatforms": [
       "Website (+Download)"
     ],
-    "streaminglinks": [
+    "streamingLinks": [
       "https://rummelbude.wixsite.com/musik/alles-banane"
     ],
     "video": {
       "exists": false,
       "link": ""
     },
-    "publishdate": "06.12.2020",
-    "songcount": 10,
+    "publishDate": "06.12.2020",
+    "songCount": 10,
     "length": "7 Minuten",
     "instrumental": 10,
     "songs": [
@@ -542,18 +542,18 @@
   "instrumenten-misch": {
     "name": "Instrumenten Misch",
     "id": "01_InstrumentenMisch",
-    "streamingplatforms": [
+    "streamingPlatforms": [
       "Website (+Download)"
     ],
-    "streaminglinks": [
+    "streamingLinks": [
       "https://rummelbude.wixsite.com/musik/instrumenten-misch"
     ],
     "video": {
       "exists": false,
       "link": ""
     },
-    "publishdate": "21.11.2020",
-    "songcount": 14,
+    "publishDate": "21.11.2020",
+    "songCount": 14,
     "length": "8 Minuten",
     "instrumental": 14,
     "songs": [

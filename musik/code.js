@@ -1,6 +1,6 @@
 async function loadAlbums() {
     try {
-        const response = await fetch('../resources/albums/albumdata.json');
+        const response = await fetch('../resources/albums/albumData.json');
         const albums = await response.json();
 
         const container = document.getElementById('albumsContainer');
@@ -9,7 +9,7 @@ async function loadAlbums() {
 
         for (let albumName in albums) {
             const album = albums[albumName];
-            const publishDate = album.publishdate;
+            const publishDate = album.publishDate;
             const year = publishDate.split('.')[2];
 
             if (!albumsByYear[year]) {
@@ -22,7 +22,7 @@ async function loadAlbums() {
 
         for (let year of sortedYears) {
             const yearDiv = document.createElement('div');
-            yearDiv.className = 'contentdiv';
+            yearDiv.className = 'contentDiv';
 
             const yearHeader = document.createElement('h2');
             yearHeader.textContent = year;
@@ -41,9 +41,9 @@ async function loadAlbums() {
                 albumImage.alt = album.name;
 
                 const albumDate = document.createElement('p');
-                albumDate.classList.add('albumdate');
+                albumDate.classList.add('albumDate');
                 albumDate.id = album.name + 'date';
-                const dateParts = album.publishdate.split('.');
+                const dateParts = album.publishDate.split('.');
                 albumDate.textContent = `${dateParts[0]}.${dateParts[1]}.`;
 
                 albumLink.appendChild(albumImage);

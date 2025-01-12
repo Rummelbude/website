@@ -11,9 +11,9 @@ async function insertData() {
         if (links.hasOwnProperty(key)) {
             const { name, link } = links[key];
 
-            // Create the wrapper div with the class "tablediv"
+            // Create the wrapper div with the class "tableDiv"
             const tableDiv = document.createElement('div');
-            tableDiv.className = 'tablediv';
+            tableDiv.className = 'tableDiv';
 
             // Create table
             const table = document.createElement('table');
@@ -27,7 +27,7 @@ async function insertData() {
             const logoLink = document.createElement('a');
             logoLink.href = link;
             logoLink.target = "_blank";
-            logoLink.innerHTML = `<img src="../images/links/${name}.svg" class="platformicon" alt="${name}">`;
+            logoLink.innerHTML = `<img src="../images/links/${name}.svg" class="platformIcon" alt="${name}">`;
             logoCell.appendChild(logoLink);
             row.appendChild(logoCell);
 

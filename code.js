@@ -1,14 +1,14 @@
 // Load JSON file and populate the #albumsContainer
 async function loadAlbums() {
-    const response = await fetch('resources/albums/albumdata.json');
+    const response = await fetch('resources/albums/albumData.json');
     const albumData = await response.json();
 
     const albumsArray = Object.values(albumData);
 
     albumsArray.sort((a, b) => {
-        const dateA = new Date(a.publishdate.split('.').reverse().join('-')); // "dd.mm.yyyy" to "yyyy-mm-dd"
-        const dateB = new Date(b.publishdate.split('.').reverse().join('-'));
-        return dateB - dateA; // Sort by newest date
+        const dateA = new Date(a.publishDate.split('.').reverse().join('-')); // "dd.mm.yyyy" to "yyyy-mm-dd"
+        const dateB = new Date(b.publishDate.split('.').reverse().join('-'));
+        return dateB - dateA; // Sort by the newest date
     });
 
     const newestAlbums = albumsArray.slice(0, 2);

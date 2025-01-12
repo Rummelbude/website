@@ -6,12 +6,12 @@ function goBack() {
 
 async function insertData() {
     let albumData;
-    await fetch('../../../resources/albums/albumdata.json')
+    await fetch('../../../resources/albums/albumData.json')
         .then((response) => response.json())
         .then((json) => albumData = json);
 
     document.title = albumData[album].name + "-Cover | Rummelbude";
-    document.getElementById("albumcover").src = "../../../images/albums/" + albumData[album].id + ".jpg";
+    document.getElementById("albumCover").src = "../../../images/albums/" + albumData[album].id + ".jpg";
 }
 
 function getQueryString() {
