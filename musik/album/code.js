@@ -4,39 +4,44 @@ function goToAlbumCover() {
     window.location.href = "cover/?album=" + encodeURIComponent(album);
 }
 
-async function insertData() {
-    let albumData;
+async function getAlbumData(album) {
+    const response = await fetch('../../resources/albums/albumData.json');
+    if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
 
-    // Get the album data
-    await fetch('../../resources/albums/albumData.json')
-        .then((response) => response.json())
-        .then((json) => albumData = json);
+    const json = await response.json();
+    if (!json[album]) throw new Error(`Album "${album}" not found.`);
+
+    return json[album];
+}
+
+async function insertData() {
+    const albumData = await getAlbumData(album);
 
     // Insert name and picture
-    document.title = albumData[album].name + " | Rummelbude";
-    document.getElementById("name").innerHTML = albumData[album].name;
-    document.getElementById("albumCover").src = "../../images/albums/" + albumData[album].id + ".jpg";
+    document.title = albumData.name + " | Rummelbude";
+    document.getElementById("name").innerHTML = albumData.name;
+    document.getElementById("albumCover").src = "../../images/albums/" + albumData.id + ".jpg";
 
     // Insert streaming links
-    document.getElementById("streamingHeader").innerHTML = albumData[album].name + " streamen";
-    albumData[album].streamingPlatforms.forEach((platform, index) => {
+    document.getElementById("streamingHeader").innerHTML = albumData.name + " streamen";
+    albumData.streamingPlatforms.forEach((platform, index) => {
         const button = document.createElement('button');
         button.innerHTML = platform;
         button.onclick = function() {
-            window.location.href = albumData[album].streamingLinks[index];
+            window.location.href = albumData.streamingLinks[index];
         };
 
         document.getElementById('streamingContainer').appendChild(button);
     });
 
     // Insert clickable video thumbnail if a video exists
-    if (albumData[album].video.exists === true) {
+    if (albumData.video.exists === true) {
         const videoThumbnailContainer = document.getElementById("videoThumbnailContainer");
         const videoThumbnail = document.createElement("img");
-        videoThumbnail.src = "../../images/albums/video-thumbnails/" + albumData[album].id + "_videoThumbnail.jpg";
+        videoThumbnail.src = "../../images/albums/video-thumbnails/" + albumData.id + "_videoThumbnail.jpg";
         videoThumbnail.id = "videoThumbnail";
         videoThumbnail.onclick = function() {
-            window.location.href = albumData[album].video.link;
+            window.location.href = albumData.video.link;
         };
 
         videoThumbnailContainer.appendChild(videoThumbnail);
@@ -46,14 +51,14 @@ async function insertData() {
     }
 
     // Insert general information
-    document.getElementById("publishDate").innerHTML = albumData[album].publishDate;
-    document.getElementById("songCount").innerHTML = albumData[album].songCount;
-    document.getElementById("length").innerHTML = albumData[album].length;
-    document.getElementById("instrumental").innerHTML = albumData[album].instrumental + " von " + albumData[album].songCount;
+    document.getElementById("publishDate").innerHTML = albumData.publishDate;
+    document.getElementById("songCount").innerHTML = albumData.songCount;
+    document.getElementById("length").innerHTML = albumData.length;
+    document.getElementById("instrumental").innerHTML = albumData.instrumental + " von " + albumData.songCount;
 
     // Insert song list
     const tableBody = document.querySelector('#songTable tbody');
-    albumData[album].songs.forEach((song, index) => {
+    albumData.songs.forEach((song, index) => {
         const row = document.createElement('tr');
 
         const numberCell = document.createElement('td');
