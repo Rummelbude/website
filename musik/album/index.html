@@ -31,15 +31,20 @@
                 </td>
             </tr>
         </table>
-        <img class="album" id="albumCover" src="../../images/logo/logo.png" alt="albumCover" onclick="goToAlbumCover()">
-        <p class="hint">Zum Vergrößern auf Bild tippen</p>
-        <div class="contentDiv">
-            <h2 class="texttop" id="streamingHeader">Album streamen</h2>
+        <div class="contentDiv" id="loadingMessage">
+            <p>
+                Lade Album...
+            </p>
+        </div>
+        <img class="album albumPageContentHidden" id="albumCover" src="" alt="albumCover" onclick="goToAlbumCover()">
+        <p class="hint albumPageContentHidden" id="biggerAlbumHint">Zum Vergrößern auf Bild tippen</p>
+        <div class="contentDiv albumPageContentHidden" id="streamingSection">
+            <h2 class="texttop" id="streamingHeader"></h2>
             <div id="streamingContainer"></div>
             <h3 class="videoStreaming textBottom" id="videoHeader">Videovisualisierung</h3>
             <div class="videoStreaming" id="videoThumbnailContainer"></div>
         </div>
-        <div class="contentDiv">
+        <div class="contentDiv albumPageContentHidden" id="generalInfos">
             <h2 class="texttop">Infos</h2>
             <table class="infoTable" id="generalInfosTable">
                 <tr>
@@ -60,7 +65,7 @@
                 </tr>
             </table>
         </div>
-        <div class="contentDiv">
+        <div class="contentDiv albumPageContentHidden" id="songs">
             <h2 class="texttop">Songs</h2>
             <table class="infoTable" id="songTable">
                 <tbody>
