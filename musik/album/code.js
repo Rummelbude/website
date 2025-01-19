@@ -74,6 +74,31 @@ async function insertData() {
 
         tableBody.appendChild(row);
     });
+
+    showContent();
+}
+
+function showContent() {
+    const checkElementsAndShowContent = setInterval(() => {
+        const albumCover = document.getElementById("albumCover");
+        const biggerAlbumHint = document.getElementById("biggerAlbumHint");
+        const streamingSection = document.getElementById("streamingSection");
+        const generalInfos = document.getElementById("generalInfos");
+        const songs = document.getElementById("songs");
+        const loadingMessage = document.getElementById("loadingMessage");
+
+        if (albumCover && biggerAlbumHint && streamingSection && generalInfos && songs) {
+            albumCover.classList.remove("albumPageContentHidden");
+            biggerAlbumHint.classList.remove("albumPageContentHidden");
+            streamingSection.classList.remove("albumPageContentHidden");
+            generalInfos.classList.remove("albumPageContentHidden");
+            songs.classList.remove("albumPageContentHidden");
+
+            loadingMessage.style.display = "none";
+
+            clearInterval(checkElementsAndShowContent);
+        }
+    }, 100);
 }
 
 function getQueryString() {

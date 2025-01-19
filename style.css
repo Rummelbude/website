@@ -381,6 +381,10 @@ a {
     transform: scale(1);
 }
 
+.albumPageContentHidden {
+    display: none;
+}
+
 .albums, .album {
     height: 30vmin;
     width: 30vmin;
