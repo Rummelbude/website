@@ -10,7 +10,7 @@ Alternativ kannst du auch den [Rummelbude-Support per E-Mail](mailto:sup.rummelb
 
 <div align="center">
     <img src="images/logo/logo-trans.png" alt="Logo" height="100" width="100"><br>
-    <a href="https://rummelbude.github.io/website">
+    <a href="https://rmlbu.de">
         <img src="images/links/Website.svg" width="52" height="40" alt="Website">
     </a>
     <a href="https://www.youtube.com/@rummelbude_musik?sub_confirmation=1">

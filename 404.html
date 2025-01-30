@@ -3,11 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <title>404 | Rummelbude</title>
-        <link rel="icon" type="image/x-icon" href="/website/images/logo/logo-trans-small.png">
-        <link rel="stylesheet" href="/website/style.css">
-        <link rel="stylesheet" href="/website/resources/footer/style.css">
-        <script src="/website/code.js" defer></script>
-        <script src="/website/resources/navigation/code.js" defer></script>
+        <link rel="icon" type="image/x-icon" href="/images/logo/logo-trans-small.png">
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="/resources/footer/style.css">
+        <script src="/code.js" defer></script>
+        <script src="/resources/navigation/code.js" defer></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
@@ -20,12 +20,12 @@
             `````╚═╝`╚═════╝``````╚═╝<br>
         </p>
         <div class="contentDiv">
-            <p class="texttop">Die Seite, die du suchst, existiert nicht. Kehre jetzt zur <a href="/website">Startseite</a> zurück.</p>
-            <p>Solltest du auf diese Seite weitergeleitet worden sein, kontaktiere bitte den <a href="/website/support">Rummelbude-Support</a>.</p>
-            <a href="/website"><button>Startseite</button></a><a href="/website/support"><button>Support</button></a>
+            <p class="texttop">Die Seite, die du suchst, existiert nicht. Kehre jetzt zur <a href="/">Startseite</a> zurück.</p>
+            <p>Wenn du glaubst, dies ist ein Fehler, kontaktiere bitte den <a href="/support">Rummelbude-Support</a>.</p>
+            <a href="/"><button>Startseite</button></a><a href="/support"><button>Support</button></a>
         </div>
         <script>
-            fetch('/website/resources/footer/index.html')
+            fetch('/resources/footer/index.html')
                 .then(response => response.text())
                 .then(data => document.querySelector('body').innerHTML += data);
         </script>

@@ -48,7 +48,7 @@ function hideNavigation() {
 async function insertLinks() {
     let links;
 
-    await fetch('/website/links/links.json')
+    await fetch('/links/links.json')
         .then((response) => response.json())
         .then((json) => links = json);
 
