@@ -316,10 +316,10 @@ a {
 }
 
 .navigationPlatformIcon {
-    width: 5vmin;
-    height: 5vmin;
+    width: 2em;
+    height: 2em;
     cursor: pointer;
-    margin: 1vmin;
+    vertical-align: middle;
 }
 
 .bigAlbum {

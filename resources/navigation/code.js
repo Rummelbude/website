@@ -62,10 +62,14 @@ async function insertLinks() {
             icon.classList.add("navigationPlatformIcon");
             icon.alt = name;
 
+            const button = document.createElement("button");
+            button.href = link;
+
             const linkElement = document.createElement("a");
             linkElement.href = link;
 
-            linkElement.appendChild(icon);
+            button.appendChild(icon);
+            linkElement.appendChild(button);
             insertionDiv.appendChild(linkElement);
         }
     }
