@@ -9,8 +9,8 @@ function navigationControl() {
             menu.classList.remove('visuallyHidden');
         }, 20);
 
-        header.style.borderBottomLeftRadius = "0";
-        header.style.borderBottomRightRadius = "0";
+        header.classList.remove("headerWhenMenuClosed");
+        header.classList.add("headerWhenMenuOpen");
 
         document.addEventListener('keydown', handleEsc);
     } else {
@@ -28,6 +28,7 @@ function navigationControl() {
 function hideNavigation() {
     const menu = document.getElementById("menu");
     const menuButton = document.getElementById("headerMenuButton");
+    const header = document.getElementById("header");
 
     menu.classList.add('visuallyHidden');
     menu.addEventListener('transitionend', function() {
@@ -39,8 +40,8 @@ function hideNavigation() {
         passive: false
     });
 
-    header.style.borderBottomLeftRadius = "0.5em";
-    header.style.borderBottomRightRadius = "0.5em";
+    header.classList.remove("headerWhenMenuOpen");
+    header.classList.add("headerWhenMenuClosed");
 
     menuButton.checked = false;
 }

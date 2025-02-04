@@ -53,7 +53,6 @@ body {
     --edge-light: hsla(0, 0%, 50%, 0.8);
     --text-light: rgba(255, 255, 255, 0.4);
 
-    border-radius: 0.5em;
     align-items: center;
     gap: 0.5em;
 
@@ -126,6 +125,14 @@ body {
     #headerMenuButton:checked + .toggle {
         transform: rotate(-90deg);
     }
+}
+
+.headerWhenMenuOpen {
+    border-radius: 0.5em 0.5em 0 0;
+}
+
+.headerWhenMenuClosed {
+    border-radius: 0.5em;
 }
 
 #menu {
@@ -538,5 +545,9 @@ a {
         width: 55vmin;
         left: auto;
         right: 4vmin;
+    }
+
+    .headerWhenMenuOpen {
+        border-radius: 0.5em 0.5em 0 0.5em;
     }
 }
