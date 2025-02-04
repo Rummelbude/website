@@ -1,6 +1,7 @@
 function navigationControl() {
     const header = document.getElementById("header");
     const menu = document.getElementById("menu");
+    const spaceAroundMenu = document.getElementById("spaceAroundMenu");
 
     if (menu.classList.contains('hidden')) {
         menu.classList.remove('hidden');
@@ -11,6 +12,8 @@ function navigationControl() {
 
         header.classList.remove("headerWhenMenuClosed");
         header.classList.add("headerWhenMenuOpen");
+
+        spaceAroundMenu.classList.remove("hidden");
 
         document.addEventListener('keydown', handleEsc);
     } else {
@@ -29,6 +32,7 @@ function hideNavigation() {
     const menu = document.getElementById("menu");
     const menuButton = document.getElementById("headerMenuButton");
     const header = document.getElementById("header");
+    const spaceAroundMenu = document.getElementById("spaceAroundMenu");
 
     menu.classList.add('visuallyHidden');
     menu.addEventListener('transitionend', function() {
@@ -42,6 +46,8 @@ function hideNavigation() {
 
     header.classList.remove("headerWhenMenuOpen");
     header.classList.add("headerWhenMenuClosed");
+
+    spaceAroundMenu.classList.add("hidden");
 
     menuButton.checked = false;
 }
@@ -64,7 +70,6 @@ async function insertLinks() {
             icon.alt = name;
 
             const button = document.createElement("button");
-            button.href = link;
 
             const linkElement = document.createElement("a");
             linkElement.href = link;
@@ -117,8 +122,9 @@ document.addEventListener("DOMContentLoaded", function() {
         const header = document.getElementById("header");
         const menu = document.getElementById("menu");
         const topSpacer = document.getElementById("topSpacer");
+        const spaceAroundMenu = document.getElementById("spaceAroundMenu");
 
-        if (navSocialMedia && header && menu && topSpacer) {
+        if (navSocialMedia && header && menu && topSpacer && spaceAroundMenu) {
             insertLinks();
             adjustMenuPosition();
             clearInterval(checkElementsAndInitialize);
