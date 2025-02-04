@@ -315,6 +315,13 @@ a {
     cursor: pointer;
 }
 
+.navigationPlatformIcon {
+    width: 5vmin;
+    height: 5vmin;
+    cursor: pointer;
+    margin: 1vmin;
+}
+
 .bigAlbum {
     height: 80vmin;
     width: 80vmin;
@@ -525,5 +532,11 @@ a {
     body, .contentDiv, button, .infoTable, .tableDiv {
         font-size: 3vmin;
         font-family: "Courier Bold", "Courier Prime", "Courier New", Courier, monospace, serif;
+    }
+
+    #menu {
+        width: 55vmin;
+        left: auto;
+        right: 4vmin;
     }
 }

@@ -57,13 +57,15 @@ async function insertLinks() {
         if (links.hasOwnProperty(key) && key !== "website") {
             const { name, link } = links[key];
 
-            const button = document.createElement("button");
-            button.textContent = name;
+            const icon = document.createElement("img");
+            icon.src = `../images/links/${name}.svg`;
+            icon.classList.add("navigationPlatformIcon");
+            icon.alt = name;
 
             const linkElement = document.createElement("a");
             linkElement.href = link;
 
-            linkElement.appendChild(button);
+            linkElement.appendChild(icon);
             insertionDiv.appendChild(linkElement);
         }
     }
