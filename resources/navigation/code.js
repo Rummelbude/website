@@ -65,7 +65,7 @@ async function insertLinks() {
             const { name, link } = links[key];
 
             const icon = document.createElement("img");
-            icon.src = `../images/links/${name}.svg`;
+            icon.src = `/images/links/${name}.svg`;
             icon.classList.add("navigationPlatformIcon");
             icon.alt = name;
 
