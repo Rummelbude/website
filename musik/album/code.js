@@ -9,7 +9,7 @@ async function getAlbumData(album) {
     if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
 
     const json = await response.json();
-    if (!json[album]) throw new Error(`Album "${album}" not found.`);
+    if (!json[album]) window.location.href = "../";
 
     return json[album];
 }
