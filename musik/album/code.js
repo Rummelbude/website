@@ -79,30 +79,50 @@ async function insertData() {
 }
 
 function showContent() {
-    const checkElementsAndShowContent = setInterval(() => {
+    const checkElementsAndShowContent = setInterval(async () => {
+        const loadingMessage = document.getElementById("loadingMessage");
         const albumCover = document.getElementById("albumCover");
         const biggerAlbumHint = document.getElementById("biggerAlbumHint");
         const streamingSection = document.getElementById("streamingSection");
         const generalInfos = document.getElementById("generalInfos");
         const songs = document.getElementById("songs");
-        const loadingMessage = document.getElementById("loadingMessage");
 
-        if (albumCover && biggerAlbumHint && streamingSection && generalInfos && songs) {
-            albumCover.classList.remove("albumPageContentHidden");
-            biggerAlbumHint.classList.remove("albumPageContentHidden");
-            streamingSection.classList.remove("albumPageContentHidden");
-            generalInfos.classList.remove("albumPageContentHidden");
-            songs.classList.remove("albumPageContentHidden");
+        if (loadingMessage && albumCover && biggerAlbumHint && streamingSection && generalInfos && songs) {
+            await sleep(400);
 
-            loadingMessage.style.display = "none";
+            hideLoadingMessage().then(() => {
+                albumCover.classList.remove("albumPageContentHidden");
+                biggerAlbumHint.classList.remove("albumPageContentHidden");
+                streamingSection.classList.remove("albumPageContentHidden");
+                generalInfos.classList.remove("albumPageContentHidden");
+                songs.classList.remove("albumPageContentHidden");
 
-            clearInterval(checkElementsAndShowContent);
+                clearInterval(checkElementsAndShowContent);
+            });
         }
     }, 100);
 }
 
+function hideLoadingMessage() {
+    return new Promise((resolve) => {
+        const loadingMessage = document.getElementById("loadingMessage");
+
+        loadingMessage.classList.add('visuallyHidden');
+        loadingMessage.addEventListener('transitionend', function handler() {
+            loadingMessage.classList.add('hidden');
+            loadingMessage.style.display = 'none';
+            loadingMessage.removeEventListener('transitionend', handler);
+            resolve(true);
+        }, { once: true });
+    });
+}
+
 function getQueryString() {
     return(new URLSearchParams(window.location.search));
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 document.addEventListener("DOMContentLoaded", function() {
