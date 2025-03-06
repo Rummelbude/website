@@ -29,6 +29,6 @@ Alternativ kannst du auch den [Rummelbude-Support per E-Mail](mailto:sup.rummelb
     </a>
     <br><br>
     <a href="https://stats.uptimerobot.com/9lGiI5xwa7">
-        <img src="https://dashboard.uptimerobot.com/_next/image?url=%2Fassets%2Fur-logo.png&w=3840&q=75" width="170" alt="UptimeRobot"">
+        <img src="https://dashboard.uptimerobot.com/_next/image?url=%2Fassets%2Fur-logo.png&w=3840&q=75" width="170" alt="UptimeRobot">
     </a>
 </div>

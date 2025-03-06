@@ -40,7 +40,7 @@ async function insertData() {
             linkCell.appendChild(linkElement);
             row.appendChild(linkCell);
 
-            // Add row to table body
+            // Add row to the table body
             const rowDiv = document.createElement('div');
             rowDiv.className = "row";
             rowDiv.appendChild(row);
