@@ -14,6 +14,25 @@ async function getAlbumData(album) {
     return json[album];
 }
 
+/**
+ * @typedef {Object} AlbumData
+ * @property {string} name
+ * @property {string} id
+ * @property {string[]} streamingPlatforms
+ * @property {string[]} streamingLinks
+ * @property {Object} video
+ * @property {boolean} video.exists
+ * @property {string} video.link
+ * @property {string} publishDate
+ * @property {number} songCount
+ * @property {string} length
+ * @property {number} instrumental
+ * @property {string[]} songs
+ */
+
+/**
+ * @returns {Promise<AlbumData>}
+ */
 async function insertData() {
     const albumData = await getAlbumData(album);
 
@@ -38,7 +57,7 @@ async function insertData() {
         document.getElementById('streamingContainer').appendChild(button);
     });
 
-    // Insert clickable video thumbnail if a video exists
+    // Insert the clickable video thumbnail if a video exists
     if (albumData.video.exists === true) {
         const videoThumbnailContainer = document.getElementById("videoThumbnailContainer");
         const videoThumbnail = document.createElement("img");
@@ -72,7 +91,7 @@ async function insertData() {
 
         const numberCell = document.createElement('td');
         numberCell.className = "numberCell";
-        numberCell.textContent = index + 1;
+        numberCell.textContent = (index + 1).toString();
 
         const nameCell = document.createElement('td');
         nameCell.className = "nameCell";
@@ -94,7 +113,7 @@ function getQueryString() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    const checkElementsAndContinue = setInterval(() => {
+    const checkElementsAndContinue = setInterval(async () => {
         const albumCover = document.getElementById("albumCover");
         const biggerAlbumHint = document.getElementById("biggerAlbumHint");
         const streamingSection = document.getElementById("streamingSection");
@@ -103,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const footer = document.getElementById("footer");
 
         if (albumCover && biggerAlbumHint && streamingSection && generalInfos && songs && footer) {
-            insertData();
+            await insertData();
             clearInterval(checkElementsAndContinue);
         }
     }, 100);
