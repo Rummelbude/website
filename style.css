@@ -467,6 +467,10 @@ a {
     text-decoration: none;
 }
 
+#albumCover {
+    margin-top: 4vmin;
+}
+
 /* LOADING MESSAGE */
 #loadingMessage {
     transition-duration: 300ms;
