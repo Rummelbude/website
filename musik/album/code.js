@@ -21,6 +21,10 @@ async function insertData() {
     document.title = albumData.name + " | Rummelbude";
     document.getElementById("name").innerHTML = albumData.name;
     document.getElementById("albumCover").src = "../../images/albums/" + albumData.id + ".jpg";
+    document.getElementById("albumCover").classList.remove("albumPageContentHidden");
+    document.getElementById("biggerAlbumHint").classList.remove("albumPageContentHidden");
+
+    // Streaming section
 
     // Insert streaming links
     document.getElementById("streamingHeader").innerHTML = albumData.name + " streamen";
@@ -40,6 +44,7 @@ async function insertData() {
         const videoThumbnail = document.createElement("img");
         videoThumbnail.src = "../../images/albums/video-thumbnails/" + albumData.id + "_videoThumbnail.jpg";
         videoThumbnail.id = "videoThumbnail";
+        videoThumbnail.alt = "Video Thumbnail";
         videoThumbnail.onclick = function() {
             window.location.href = albumData.video.link;
         };
@@ -50,11 +55,15 @@ async function insertData() {
         videoThumbnailContainer.style.display = "block";
     }
 
+    document.getElementById("streamingSection").classList.remove("albumPageContentHidden");
+
+
     // Insert general information
     document.getElementById("publishDate").innerHTML = albumData.publishDate;
     document.getElementById("songCount").innerHTML = albumData.songCount;
     document.getElementById("length").innerHTML = albumData.length;
     document.getElementById("instrumental").innerHTML = albumData.instrumental + " von " + albumData.songCount;
+    document.getElementById("generalInfos").classList.remove("albumPageContentHidden");
 
     // Insert song list
     const tableBody = document.querySelector('#songTable tbody');
@@ -74,57 +83,28 @@ async function insertData() {
 
         tableBody.appendChild(row);
     });
+    document.getElementById("songs").classList.remove("albumPageContentHidden");
 
-    showContent();
-}
-
-function showContent() {
-    const checkElementsAndShowContent = setInterval(async () => {
-        const loadingMessage = document.getElementById("loadingMessage");
-        const albumCover = document.getElementById("albumCover");
-        const biggerAlbumHint = document.getElementById("biggerAlbumHint");
-        const streamingSection = document.getElementById("streamingSection");
-        const generalInfos = document.getElementById("generalInfos");
-        const songs = document.getElementById("songs");
-
-        if (loadingMessage && albumCover && biggerAlbumHint && streamingSection && generalInfos && songs) {
-            await sleep(400);
-
-            hideLoadingMessage().then(() => {
-                albumCover.classList.remove("albumPageContentHidden");
-                biggerAlbumHint.classList.remove("albumPageContentHidden");
-                streamingSection.classList.remove("albumPageContentHidden");
-                generalInfos.classList.remove("albumPageContentHidden");
-                songs.classList.remove("albumPageContentHidden");
-
-                clearInterval(checkElementsAndShowContent);
-            });
-        }
-    }, 100);
-}
-
-function hideLoadingMessage() {
-    return new Promise((resolve) => {
-        const loadingMessage = document.getElementById("loadingMessage");
-
-        loadingMessage.classList.add('visuallyHidden');
-        loadingMessage.addEventListener('transitionend', function handler() {
-            loadingMessage.classList.add('hidden');
-            loadingMessage.style.display = 'none';
-            loadingMessage.removeEventListener('transitionend', handler);
-            resolve(true);
-        }, { once: true });
-    });
+    // Insert footer
+    document.getElementById("footer").style.display = "block";
 }
 
 function getQueryString() {
     return(new URLSearchParams(window.location.search));
 }
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-
 document.addEventListener("DOMContentLoaded", function() {
-    insertData();
+    const checkElementsAndContinue = setInterval(() => {
+        const albumCover = document.getElementById("albumCover");
+        const biggerAlbumHint = document.getElementById("biggerAlbumHint");
+        const streamingSection = document.getElementById("streamingSection");
+        const generalInfos = document.getElementById("generalInfos");
+        const songs = document.getElementById("songs");
+        const footer = document.getElementById("footer");
+
+        if (albumCover && biggerAlbumHint && streamingSection && generalInfos && songs && footer) {
+            insertData();
+            clearInterval(checkElementsAndContinue);
+        }
+    }, 100);
 });
