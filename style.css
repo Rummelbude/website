@@ -17,8 +17,21 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(56,0,0,1) 50%, rgba(0,0,0,1) 100%);
+    background: rgb(83,0,0);
+    background: -moz-linear-gradient(30deg, rgba(83,0,0,1) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(30deg, rgba(83,0,0,1) 0%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(30deg, rgba(83,0,0,1) 0%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#530000",endColorstr="#000000",GradientType=1);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
     font-family: "Courier Prime", "Courier New", Courier, monospace, serif;
     color: white;
     text-align: center;
@@ -613,6 +626,10 @@ a {
 
 /* For Desktop View */
 @media screen and (min-width: 1024px) {
+    body {
+        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(56,0,0,1) 50%, rgba(0,0,0,1) 100%);
+    }
+
     body, .contentDiv, button, .infoTable, .tableDiv {
         font-size: 3vmin;
         font-family: "Courier Bold", "Courier Prime", "Courier New", Courier, monospace, serif;

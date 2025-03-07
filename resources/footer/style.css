@@ -1,5 +1,5 @@
 #footer {
-    margin: 10vmin auto;
+    margin: 0 auto;
     max-width: calc(100% - 20vmin);
     text-align: center;
     font-size: small;
@@ -35,4 +35,10 @@
     button {
         font-size: small;
     }
+}
+
+#bottomSpacer {
+    height: 5vmin;
+    width: calc(100% - 20vmin);
+    margin: 0 auto;
 }
