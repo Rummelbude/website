@@ -30,9 +30,6 @@ async function getAlbumData(album) {
  * @property {string[]} songs
  */
 
-/**
- * @returns {Promise<AlbumData>}
- */
 async function insertData() {
     const albumData = await getAlbumData(album);
 
@@ -123,8 +120,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const footer = document.getElementById("footer");
 
         if (albumCover && biggerAlbumHint && streamingSection && generalInfos && songs && footer) {
-            await insertData();
             clearInterval(checkElementsAndContinue);
+            await insertData();
         }
     }, 100);
 });
