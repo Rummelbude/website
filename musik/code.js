@@ -26,7 +26,7 @@ async function loadAlbums() {
 
             const yearHeader = document.createElement('h2');
             yearHeader.textContent = year;
-            yearHeader.className = 'texttop';
+            yearHeader.className = 'textTop';
             yearDiv.appendChild(yearHeader);
 
             for (let album of albumsByYear[year]) {
