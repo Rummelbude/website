@@ -35,9 +35,9 @@ async function insertData() {
 
     // Insert name and picture
     document.title = albumData.name + " | Rummelbude";
-    document.getElementById("name").innerHTML = albumData.name;
+    document.getElementById("name").innerHTML = ` > ${albumData.name}`;
     await adjustMenuPosition();
-    document.getElementById("albumCover").src = "../../images/albums/" + albumData.id + ".jpg";
+    document.getElementById("albumCover").src = `../../images/albums/${albumData.id}.jpg`;
     document.getElementById("albumCover").classList.remove("albumPageContentHidden");
     document.getElementById("biggerAlbumHint").classList.remove("albumPageContentHidden");
 
