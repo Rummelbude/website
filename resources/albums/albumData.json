@@ -1,4 +1,27 @@
 {
+  "moroder---pt.-3": {
+    "name": "MORODER - pt. 3",
+    "id": "21_MORODER_-_pt._3",
+    "streamingPlatforms": [
+      "YouTube",
+      "SoundCloud"
+    ],
+    "streamingLinks": [
+      "https://youtube.com/playlist?list=PLtiN0t0kunT5g7hHmU6owDmlyliJo_m2h",
+      "https://soundcloud.com/rummelbude_musik/moroder-pt-3"
+    ],
+    "video": {
+      "exists": false,
+      "link": ""
+    },
+    "publishDate": "25.03.2025",
+    "songCount": 1,
+    "length": "2 Minuten, 6 Sekunden",
+    "instrumental": 1,
+    "songs": [
+      "MORODER - pt. 3"
+    ]
+  },
   "ducks-crossing": {
     "name": "Ducks Crossing",
     "id": "20_DucksCrossing",
