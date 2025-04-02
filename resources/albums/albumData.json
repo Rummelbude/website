@@ -481,12 +481,8 @@
   "soundbox": {
     "name": "Soundbox",
     "id": "03_Soundbox",
-    "streamingPlatforms": [
-      "Website (+Download)"
-    ],
-    "streamingLinks": [
-      "https://rummelbude.wixsite.com/musik/soundbox"
-    ],
+    "streamingPlatforms": [],
+    "streamingLinks": [],
     "video": {
       "exists": false,
       "link": ""
@@ -510,12 +506,8 @@
   "adventszauber-2020": {
     "name": "Adventszauber 2020",
     "id": "03_SoundboxAdventszauber",
-    "streamingPlatforms": [
-      "Website (+Download)"
-    ],
-    "streamingLinks": [
-      "https://rummelbude.wixsite.com/musik/adventszauber-2020"
-    ],
+    "streamingPlatforms": [],
+    "streamingLinks": [],
     "video": {
       "exists": false,
       "link": ""
@@ -535,12 +527,8 @@
   "alles-banane": {
     "name": "Alles Banane",
     "id": "02_AllesBanane",
-    "streamingPlatforms": [
-      "Website (+Download)"
-    ],
-    "streamingLinks": [
-      "https://rummelbude.wixsite.com/musik/alles-banane"
-    ],
+    "streamingPlatforms": [],
+    "streamingLinks": [],
     "video": {
       "exists": false,
       "link": ""
@@ -565,12 +553,8 @@
   "instrumenten-misch": {
     "name": "Instrumenten Misch",
     "id": "01_InstrumentenMisch",
-    "streamingPlatforms": [
-      "Website (+Download)"
-    ],
-    "streamingLinks": [
-      "https://rummelbude.wixsite.com/musik/instrumenten-misch"
-    ],
+    "streamingPlatforms": [],
+    "streamingLinks": [],
     "video": {
       "exists": false,
       "link": ""
