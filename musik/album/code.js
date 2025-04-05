@@ -45,15 +45,23 @@ async function insertData() {
 
     // Insert streaming links
     document.getElementById("streamingHeader").innerHTML = albumData.name + " streamen";
-    albumData.streamingPlatforms.forEach((platform, index) => {
-        const button = document.createElement('button');
-        button.innerHTML = platform;
-        button.onclick = function() {
-            window.location.href = albumData.streamingLinks[index];
-        };
+    if (albumData.streamingPlatforms.length === 0) {
+        const infoMessage = document.createElement("p");
+        infoMessage.innerHTML = `${albumData.name} ist nicht mehr oder noch nicht zum Streamen verfügbar.`;
+        infoMessage.id = "streamingInfoMessage";
+        infoMessage.classList.add("textBottom");
+        document.getElementById('streamingContainer').appendChild(infoMessage);
+    } else {
+        albumData.streamingPlatforms.forEach((platform, index) => {
+            const button = document.createElement('button');
+            button.innerHTML = platform;
+            button.onclick = function() {
+                window.location.href = albumData.streamingLinks[index];
+            };
 
-        document.getElementById('streamingContainer').appendChild(button);
-    });
+            document.getElementById('streamingContainer').appendChild(button);
+        });
+    }
 
     // Insert the clickable video thumbnail if a video exists
     if (albumData.video.exists === true) {
