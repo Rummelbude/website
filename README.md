@@ -6,7 +6,7 @@
 Diese Website ersetzt die bisherigen über Wix gehosteten Websites. Sie wird über [GitHub Pages](https://github.io) gehostet.
 
 Unterstütze das Projekt jetzt! Schau dir [die Website](https://www.rmlbu.de) an und erstelle [Issues](https://github.com/Rummelbude/website/issues) oder [Pull requests](https://github.com/Rummelbude/website/pulls), wenn du Verbesserungsvorschläge hast.
-Alternativ kannst du auch den [Rummelbude-Support per E-Mail](mailto:sup.rummelbude_musik@gmx.de) erreichen.
+Alternativ kannst du mich auch [per E-Mail](mailto:kontakt@rmlbu.de) erreichen.
 
 ---
 

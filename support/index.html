@@ -1,49 +1,13 @@
 <!DOCTYPE html>
-<html lang="de">
-    <head>
-        <meta charset="UTF-8">
-        <title>Support | Rummelbude</title>
-        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96"/>
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
-        <link rel="shortcut icon" href="/favicon.ico"/>
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
-        <link rel="manifest" href="/site.webmanifest"/>
-        <link rel="stylesheet" href="../style.css">
-        <link rel="stylesheet" href="../resources/footer/style.css">
-        <script src="../resources/navigation/code.js" defer></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <script>
-            fetch('../resources/navigation/index.html')
-                .then(response => response.text())
-                .then(data => document.querySelector('body').innerHTML += data);
-        </script>
-        <div id="topSpacer"></div>
-        <table id="header" class="headerWhenMenuClosed">
-            <tr>
-                <td id="headerTableLogo"><a href="/"><img id="logo" src="../images/logo/logo-trans.png" alt="logo"></a></td>
-                <td id="headerTableText"><h1 id="headerText">Support</h1></td>
-                <td id="headerTableMenu">
-                    <input id="headerMenuButton" type="checkbox" onclick="navigationControl()">
-                    <label class="toggle" for="headerMenuButton">
-                        <span id="bar1" class="bars"></span>
-                        <span id="bar2" class="bars"></span>
-                        <span id="bar3" class="bars"></span>
-                    </label>
-                </td>
-            </tr>
-        </table>
-        <div class="contentDiv">
-            <h2 class="textTop">Rummelbude-Support</h2>
-            <p>Du kannst den Rummelbude-Support entweder per E-Mail oder über die <a href="../links">Social-Media-Kanäle</a> von Rummelbude kontaktieren.</p>
-            <p>Die E-Mail-Adresse lautet <a href="mailto:sup.rummelbude_musik@gmx.de">sup.rummelbude_musik@gmx.de</a>. Klicke/tippe auf den Button, um dich direkt in dein E-Mail-Programm weiterleiten zu lassen:</p>
-            <a href="mailto:sup.rummelbude_musik@gmx.de"><button>E-Mail</button></a>
-        </div>
-        <script>
-            fetch('../resources/footer/index.html')
-                .then(response => response.text())
-                .then(data => document.querySelector('body').innerHTML += data);
-        </script>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Rummelbude</title>
+    <script>
+      window.location.href = "../kontakt"
+    </script>
+  </head>
+  <body>
+    If you don't get redirected automatically, click <a href="https://rmlbu.de/">here</a>.
+  </body>
 </html>
