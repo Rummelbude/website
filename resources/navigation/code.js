@@ -73,6 +73,8 @@ async function insertLinks() {
 
             const linkElement = document.createElement("a");
             linkElement.href = link;
+            linkElement.target = "_blank";
+            linkElement.rel = "noopener noreferrer";
 
             button.appendChild(icon);
             linkElement.appendChild(button);
