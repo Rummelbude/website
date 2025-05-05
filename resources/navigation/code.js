@@ -3,36 +3,39 @@ function navigationControl() {
     const menu = document.getElementById("menu");
     const spaceAroundMenu = document.getElementById("spaceAroundMenu");
 
+    if (!header || !menu || !spaceAroundMenu) return;
+
     if (menu.classList.contains('hidden')) {
-        menu.classList.remove('hidden');
-        menu.style.display = 'block';
-        setTimeout(function () {
-            menu.classList.remove('visuallyHidden');
-        }, 20);
-
-        header.classList.remove("headerWhenMenuClosed");
-        header.classList.add("headerWhenMenuOpen");
-
-        spaceAroundMenu.classList.remove("hidden");
-
-        document.addEventListener('keydown', handleEsc);
+        showNavigation(menu, header, spaceAroundMenu, handleEsc);
     } else {
-        hideNavigation();
+        hideNavigation(menu, header, spaceAroundMenu);
     }
 
     function handleEsc(event) {
         if (event.key === 'Escape') {
-            hideNavigation();
+            hideNavigation(menu, header, spaceAroundMenu);
             document.removeEventListener('keydown', handleEsc);
         }
     }
 }
 
-function hideNavigation() {
-    const menu = document.getElementById("menu");
+function showNavigation(menu, header, spaceAroundMenu, handleEsc) {
+    menu.classList.remove('hidden');
+    menu.style.display = 'block';
+    setTimeout(function () {
+        menu.classList.remove('visuallyHidden');
+    }, 20);
+
+    header.classList.remove("headerWhenMenuClosed");
+    header.classList.add("headerWhenMenuOpen");
+
+    spaceAroundMenu.classList.remove("hidden");
+
+    document.addEventListener('keydown', handleEsc);
+}
+
+function hideNavigation(menu, header, spaceAroundMenu) {
     const menuButton = document.getElementById("headerMenuButton");
-    const header = document.getElementById("header");
-    const spaceAroundMenu = document.getElementById("spaceAroundMenu");
 
     menu.classList.add('visuallyHidden');
     menu.addEventListener('transitionend', function() {
@@ -52,34 +55,38 @@ function hideNavigation() {
     menuButton.checked = false;
 }
 
+function createLinkElement(name, link) {
+    const icon = document.createElement("img");
+    icon.src = `/images/links/${name}.svg`;
+    icon.classList.add("navigationPlatformIcon");
+    icon.alt = name;
+
+    const button = document.createElement("button");
+    button.appendChild(icon);
+
+    const linkElement = document.createElement("a");
+    linkElement.href = link;
+    linkElement.target = "_blank";
+    linkElement.rel = "noopener noreferrer";
+    linkElement.appendChild(button);
+
+    return linkElement;
+}
+
 async function insertLinks() {
-    let links;
+    try {
+        const response = await fetch('/links/links.json');
+        const links = await response.json();
 
-    await fetch('/links/links.json')
-        .then((response) => response.json())
-        .then((json) => links = json);
-
-    const insertionDiv = document.getElementById('navigationSocialMedia');
-    for (const key in links) {
-        if (links.hasOwnProperty(key) && key !== "website") {
-            const { name, link } = links[key];
-
-            const icon = document.createElement("img");
-            icon.src = `/images/links/${name}.svg`;
-            icon.classList.add("navigationPlatformIcon");
-            icon.alt = name;
-
-            const button = document.createElement("button");
-
-            const linkElement = document.createElement("a");
-            linkElement.href = link;
-            linkElement.target = "_blank";
-            linkElement.rel = "noopener noreferrer";
-
-            button.appendChild(icon);
-            linkElement.appendChild(button);
-            insertionDiv.appendChild(linkElement);
-        }
+        const insertionDiv = document.getElementById('navigationSocialMedia');
+        Object.entries(links).forEach(([key, { name, link }]) => {
+            if (key !== "website") {
+                const linkElement = createLinkElement(name, link);
+                insertionDiv.appendChild(linkElement);
+            }
+        });
+    } catch (error) {
+        console.error('Failed to insert links:', error);
     }
 }
 
@@ -88,17 +95,19 @@ async function adjustMenuPosition() {
     const menu = document.getElementById("menu");
     const topSpacer = document.getElementById("topSpacer");
 
-    const menuOffset = vminToPx(4);
-    const spacerAddition = vminToPx(4);
+    if (!header || !menu || !topSpacer) return;
+
+    const menuOffset = convertToPx(4, "vmin");
+    const spacerAddition = convertToPx(4, "vmin");
 
     menu.style.top = `${header.offsetHeight + menuOffset}px`;
     topSpacer.style.height = `${header.offsetHeight + spacerAddition}px`;
 }
 
-function vminToPx(vminValue) {
+function convertToPx(value, unit) {
     const tempElement = document.createElement("div");
 
-    tempElement.style.height = `${vminValue}vmin`;
+    tempElement.style.height = `${value}${unit}`;
     tempElement.style.position = "absolute";
     tempElement.style.visibility = "hidden";
 
@@ -126,12 +135,11 @@ document.addEventListener("DOMContentLoaded", function() {
         const topSpacer = document.getElementById("topSpacer");
         const spaceAroundMenu = document.getElementById("spaceAroundMenu");
 
-        if (navSocialMedia && header && menu && topSpacer && spaceAroundMenu) {
-            insertLinks();
-            adjustMenuPosition();
-            clearInterval(checkElementsAndInitialize);
+        if (!(navSocialMedia && header && menu && topSpacer && spaceAroundMenu)) return;
 
-            window.addEventListener('resize', debounce(adjustMenuPosition, 100));
-        }
+        void insertLinks();
+        void adjustMenuPosition();
+        clearInterval(checkElementsAndInitialize);
+        window.addEventListener('resize', debounce(adjustMenuPosition, 100));
     }, 100);
 });
