@@ -13,22 +13,18 @@ async function loadAlbums() {
 
     const newestAlbums = albumsArray.slice(0, 2);
 
-    const albumsContainer = document.getElementById('albumsContainer');
+    const albumLinks = [
+        document.getElementById('albumLink1'),
+        document.getElementById('albumLink2')
+    ];
+    const albumCovers = [
+        document.getElementById('albumCover1'),
+        document.getElementById('albumCover2')
+    ];
 
-    newestAlbums.forEach(album => {
-        const albumCoverUrl = `images/albums/200x200/${album.id}_200x200.jpg`;
-        const albumLink = `musik/album/?album=${album.name.toLowerCase().replace(/ /g, "-")}`;
-
-        const linkElement = document.createElement('a');
-        linkElement.href = albumLink;
-
-        const imgElement = document.createElement('img');
-        imgElement.src = albumCoverUrl;
-        imgElement.classList.add('albums');
-
-        linkElement.appendChild(imgElement);
-
-        albumsContainer.appendChild(linkElement);
+    newestAlbums.forEach((album, i) => {
+        albumLinks[i].href = `musik/album/?album=${album.name.toLowerCase().replace(/ /g, "-")}`;
+        albumCovers[i].src = `images/albums/200x200/${album.id}_200x200.jpg`;
     });
 }
 

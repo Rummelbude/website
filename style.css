@@ -328,6 +328,17 @@ a {
     margin: 0;
 }
 
+#albumsContainer {
+    a {
+        text-decoration: none;
+        line-height: 0;
+    }
+    .albums {
+        display: inline-block;
+        margin: 0 auto;
+    }
+}
+
 #calendar {
     width: fit-content;
     max-width: 100%;
