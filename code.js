@@ -1,4 +1,3 @@
-// Load JSON file and populate the #albumsContainer
 async function loadAlbums() {
     const response = await fetch('resources/albums/albumData.json');
     const albumData = await response.json();
