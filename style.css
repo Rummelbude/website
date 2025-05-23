@@ -1,3 +1,11 @@
+:root {
+    --bezier: cubic-bezier(0.22, 0.61, 0.36, 1);
+    --edge-light: hsla(0, 0%, 50%, 0.8);
+    --text-light: rgba(255, 255, 255, 0.4);
+
+    --accent-red: 33,0,0
+}
+
 /* latin-ext */
 @font-face {
     font-family: 'Courier Prime';
@@ -51,20 +59,16 @@ body {
     top: 4vmin;
     width: calc(100% - 8vmin);
 
-    background: rgb(33,0,0);
-    background: -moz-linear-gradient(90deg, rgba(33,0,0,1) 0%, rgba(27,0,0,1) 50%, rgba(33,0,0,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(33,0,0,1) 0%, rgba(27,0,0,1) 50%, rgba(33,0,0,1) 100%);
-    background: linear-gradient(90deg, rgba(33,0,0,1) 0%, rgba(27,0,0,1) 50%, rgba(33,0,0,1) 100%);
+    background: rgb(var(--accent-red));
+    background: -moz-linear-gradient(90deg, rgba(var(--accent-red),1) 0%, rgba(27,0,0,1) 50%, rgba(var(--accent-red),1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(var(--accent-red),1) 0%, rgba(27,0,0,1) 50%, rgba(var(--accent-red),1) 100%);
+    background: linear-gradient(90deg, rgba(var(--accent-red),1) 0%, rgba(27,0,0,1) 50%, rgba(var(--accent-red),1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#210000",endColorstr="#210000",GradientType=1);
 
     text-align: center;
     font-size: smaller;
     padding: 2vmin;
     vertical-align: middle;
-
-    --bezier: cubic-bezier(0.22, 0.61, 0.36, 1);
-    --edge-light: hsla(0, 0%, 50%, 0.8);
-    --text-light: rgba(255, 255, 255, 0.4);
 
     align-items: center;
     gap: 0.5em;
@@ -162,15 +166,11 @@ body {
     font-size: smaller;
     padding: 2vmin;
 
-    background: rgb(33,0,0);
-    background: -moz-linear-gradient(90deg, rgba(33,0,0,1) 0%, rgba(27,0,0,1) 50%, rgba(33,0,0,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(33,0,0,1) 0%, rgba(27,0,0,1) 50%, rgba(33,0,0,1) 100%);
-    background: linear-gradient(90deg, rgba(33,0,0,1) 0%, rgba(27,0,0,1) 50%, rgba(33,0,0,1) 100%);
+    background: rgb(var(--accent-red));
+    background: -moz-linear-gradient(90deg, rgba(var(--accent-red),1) 0%, rgba(27,0,0,1) 50%, rgba(var(--accent-red),1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(var(--accent-red),1) 0%, rgba(27,0,0,1) 50%, rgba(var(--accent-red),1) 100%);
+    background: linear-gradient(90deg, rgba(var(--accent-red),1) 0%, rgba(27,0,0,1) 50%, rgba(var(--accent-red),1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#210000",endColorstr="#210000",GradientType=1);
-
-    --bezier: cubic-bezier(0.22, 0.61, 0.36, 1);
-    --edge-light: hsla(0, 0%, 50%, 0.8);
-    --text-light: rgba(255, 255, 255, 0.4);
 
     border-bottom-left-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
@@ -225,10 +225,6 @@ body {
 /* Thanks to milegelu for the button design template */
 /* >   https://uiverse.io/milegelu/tough-cobra-42    */
 button {
-    --bezier: cubic-bezier(0.22, 0.61, 0.36, 1);
-    --edge-light: hsla(0, 0%, 50%, 0.8);
-    --text-light: rgba(255, 255, 255, 0.4);
-
     cursor: pointer;
     padding: 0.7em 1em;
     margin: 1vmin;
@@ -246,10 +242,10 @@ button {
 
     background: linear-gradient(
             140deg,
-            hsla(var(--back-color), 50%, 1) min(2em, 20%),
-            hsla(var(--back-color), 50%, 0.6) min(8em, 100%)
+            rgba(var(--accent-red), 0.3) min(2em, 20%),
+            rgba(var(--accent-red), 0.6) min(8em, 100%)
     );
-    color: hsla(0, 0%, 90%);
+    color: rgba(255, 255, 255, 0.9);
     border: 0;
     box-shadow: inset 0.4px 1px 4px var(--edge-light);
 
@@ -257,11 +253,15 @@ button {
 }
 
 button:hover {
-    --edge-light: hsla(0, 0%, 50%, 1);
-    --back-color: 1, 70%;
+    --edge-light: rgba(128, 128, 128, 1);
     text-shadow: 0 0 10px var(--text-light);
     box-shadow: inset 0.4px 1px 4px var(--edge-light),
-    2px 4px 8px hsla(0, 0%, 0%, 0.295);
+    2px 4px 8px rgba(0, 0, 0, 0.295);
+    background: linear-gradient(
+            140deg,
+            rgba(var(--accent-red), 1) min(2em, 20%),
+            rgba(var(--accent-red), 0.6) min(8em, 100%)
+    );
     transform: scale(1.1);
 }
 
@@ -270,13 +270,13 @@ button:active {
 
     background: linear-gradient(
             140deg,
-            hsla(var(--back-color), 50%, 1) min(2em, 20%),
-            hsla(var(--back-color), 50%, 0.6) min(8em, 100%)
+            rgba(var(--accent-red), 1) min(2em, 20%),
+            rgba(var(--accent-red), 0.6) min(8em, 100%)
     );
     box-shadow: inset 0.4px 1px 8px var(--edge-light),
-    0 0 8px hsla(var(--back-color), 50%, 0.6);
+    0 0 8px rgba(var(--accent-red), 0.6);
     text-shadow: 0 0 20px var(--text-light);
-    color: hsla(0, 0%, 100%, 1);
+    color: rgba(255, 255, 255, 1);
     letter-spacing: 0.1em;
     transform: scale(1);
 }
@@ -291,10 +291,6 @@ a {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.3);
     padding: 2vmin;
-
-    --bezier: cubic-bezier(0.22, 0.61, 0.36, 1);
-    --edge-light: hsla(0, 0%, 50%, 0.8);
-    --text-light: rgba(255, 255, 255, 0.4);
 
     border-radius: 0.5em;
     align-items: center;
@@ -339,26 +335,6 @@ a {
     }
 }
 
-#calendar {
-    width: fit-content;
-    max-width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    background-color: black;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 white;
-    padding: 10px;
-    th {
-        padding-left: 1.5vmin;
-        padding-right: 1.5vmin;
-    }
-    .textTop {
-        margin-top: 0;
-    }
-    .textBottom {
-        margin-bottom: 0;
-    }
-}
 
 .platformIcon {
     width: 4vmin;
@@ -378,10 +354,6 @@ a {
     height: 80vmin;
     width: 80vmin;
     max-width: 100%;
-
-    --bezier: cubic-bezier(0.22, 0.61, 0.36, 1);
-    --edge-light: hsla(0, 0%, 50%, 0.8);
-    --text-light: rgba(255, 255, 255, 0.4);
 
     margin: 1.25vmin;
     padding: 0.5vmin;
@@ -411,10 +383,6 @@ a {
     height: 18vmin;
     cursor: pointer;
 
-    --bezier: cubic-bezier(0.22, 0.61, 0.36, 1);
-    --edge-light: hsla(0, 0%, 50%, 0.8);
-    --text-light: rgba(255, 255, 255, 0.4);
-
     margin: 1.25vmin;
     padding: 0.5vmin;
     border-radius: 0.5em;
@@ -429,7 +397,7 @@ a {
 
 #videoThumbnail:hover {
     --edge-light: hsla(0, 0%, 50%, 1);
-    --back-color: 1, 70%;
+    --back-color-hsla: 1, 70%;
     text-shadow: 0 0 10px var(--text-light);
     box-shadow: inset 0.4px 1px 4px var(--edge-light),
     2px 4px 8px hsla(0, 0%, 0%, 0.295);
@@ -450,10 +418,6 @@ a {
     width: 30vmin;
     cursor: pointer;
 
-    --bezier: cubic-bezier(0.22, 0.61, 0.36, 1);
-    --edge-light: hsla(0, 0%, 50%, 0.8);
-    --text-light: rgba(255, 255, 255, 0.4);
-
     margin: 1.25vmin;
     padding: 0.5vmin;
     border-radius: 0.5em;
@@ -468,7 +432,7 @@ a {
 
 .albums:hover, .album:hover {
     --edge-light: hsla(0, 0%, 50%, 1);
-    --back-color: 1, 70%;
+    --back-color-hsla: 1, 70%;
     text-shadow: 0 0 10px var(--text-light);
     box-shadow: inset 0.4px 1px 4px var(--edge-light),
     2px 4px 8px hsla(0, 0%, 0%, 0.295);
@@ -501,13 +465,9 @@ a {
     margin: 0 auto;
     width: fit-content;
     text-align: left;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.3);
 
     padding: 10px;
-
-    --bezier: cubic-bezier(0.22, 0.61, 0.36, 1);
-    --edge-light: hsla(0, 0%, 50%, 0.8);
-    --text-light: rgba(255, 255, 255, 0.4);
 
     border-radius: 0.5em;
     align-items: center;
@@ -551,7 +511,7 @@ a {
     .tableDiv {
         margin: 5vmin auto;
         text-align: center;
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.3);
         padding: 2vmin;
 
         --bezier: cubic-bezier(0.22, 0.61, 0.36, 1);
