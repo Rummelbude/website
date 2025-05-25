@@ -342,7 +342,7 @@ a {
     cursor: pointer;
 }
 
-.navigationPlatformIcon {
+.navigationPlatformIcon, .streamingButtonWithLogo {
     width: 2em;
     height: 2em;
     cursor: pointer;
@@ -369,6 +369,10 @@ a {
     height: 16px;
     width: 16px;
     cursor: pointer;
+}
+
+.streamingButtonWithLogo {
+    margin-right: 1em;
 }
 
 .videoStreaming {

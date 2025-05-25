@@ -44,6 +44,7 @@ async function insertData() {
 
     // Insert streaming links
     document.getElementById("streamingHeader").innerHTML = albumData.name + " streamen";
+    const streamingLogos = await getAvailableStreamingLogos();
 
     if (Object.keys(albumData.streaming).length === 0) {
         const infoMessage = document.createElement("p");
@@ -54,7 +55,20 @@ async function insertData() {
     } else {
         Object.entries(albumData.streaming).forEach(([platform, url]) => {
             const button = document.createElement('button');
-            button.innerHTML = platform;
+
+            if (streamingLogos[platform]) {
+                const logo = document.createElement('img');
+                logo.src = "../../images/links/" + streamingLogos[platform];
+                logo.classList.add("streamingButtonWithLogo");
+                button.style.fontSize = "smaller";
+
+                button.appendChild(logo);
+            }
+
+            const buttonText = document.createElement('span');
+            buttonText.innerText = platform;
+            button.appendChild(buttonText);
+
             button.onclick = function() {
                 window.location.href = url.toString();
             };
@@ -62,6 +76,7 @@ async function insertData() {
             document.getElementById('streamingContainer').appendChild(button);
         });
     }
+
 
     // Insert the clickable video thumbnail if a video exists
     if (albumData.video !== "") {
@@ -116,6 +131,11 @@ async function insertData() {
 
 function getQueryString() {
     return(new URLSearchParams(window.location.search));
+}
+
+async function getAvailableStreamingLogos() {
+    const response = await fetch('../../resources/albums/streamingLogos.json');
+    return await response.json();
 }
 
 document.addEventListener("DOMContentLoaded", function() {
