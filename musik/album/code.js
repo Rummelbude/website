@@ -18,9 +18,8 @@ async function getAlbumData(album) {
  * @typedef {Object} AlbumData
  * @property {string} name
  * @property {string} id
- * @property {string[]} streamingPlatforms
- * @property {string[]} streamingLinks
- * @property {Object} video
+ * @property {Object} streaming
+ * @property {string} video
  * @property {boolean} video.exists
  * @property {string} video.link
  * @property {string} publishDate
@@ -45,18 +44,19 @@ async function insertData() {
 
     // Insert streaming links
     document.getElementById("streamingHeader").innerHTML = albumData.name + " streamen";
-    if (albumData.streamingPlatforms.length === 0) {
+
+    if (Object.keys(albumData.streaming).length === 0) {
         const infoMessage = document.createElement("p");
         infoMessage.innerHTML = `${albumData.name} ist nicht mehr oder noch nicht zum Streamen verfügbar.`;
         infoMessage.id = "streamingInfoMessage";
         infoMessage.classList.add("textBottom");
         document.getElementById('streamingContainer').appendChild(infoMessage);
     } else {
-        albumData.streamingPlatforms.forEach((platform, index) => {
+        Object.entries(albumData.streaming).forEach(([platform, url]) => {
             const button = document.createElement('button');
             button.innerHTML = platform;
             button.onclick = function() {
-                window.location.href = albumData.streamingLinks[index];
+                window.location.href = url.toString();
             };
 
             document.getElementById('streamingContainer').appendChild(button);
@@ -64,14 +64,14 @@ async function insertData() {
     }
 
     // Insert the clickable video thumbnail if a video exists
-    if (albumData.video.exists === true) {
+    if (albumData.video !== "") {
         const videoThumbnailContainer = document.getElementById("videoThumbnailContainer");
         const videoThumbnail = document.createElement("img");
         videoThumbnail.src = "../../images/albums/video-thumbnails/" + albumData.id + "_videoThumbnail.jpg";
         videoThumbnail.id = "videoThumbnail";
         videoThumbnail.alt = "Video Thumbnail";
         videoThumbnail.onclick = function() {
-            window.location.href = albumData.video.link;
+            window.location.href = albumData.video;
         };
 
         videoThumbnailContainer.appendChild(videoThumbnail);

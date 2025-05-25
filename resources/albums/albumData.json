@@ -2,18 +2,11 @@
   "moroder---pt.-3": {
     "name": "MORODER - pt. 3",
     "id": "21_MORODER_-_pt._3",
-    "streamingPlatforms": [
-      "YouTube",
-      "SoundCloud"
-    ],
-    "streamingLinks": [
-      "https://youtube.com/playlist?list=PLtiN0t0kunT5g7hHmU6owDmlyliJo_m2h",
-      "https://soundcloud.com/rummelbude_musik/moroder-pt-3"
-    ],
-    "video": {
-      "exists": false,
-      "link": ""
+    "streaming": {
+      "YouTube": "https://youtube.com/playlist?list=PLtiN0t0kunT5g7hHmU6owDmlyliJo_m2h",
+      "SoundCloud": "https://soundcloud.com/rummelbude_musik/moroder-pt-3"
     },
+    "video": "",
     "publishDate": "25.03.2025",
     "songCount": 1,
     "length": "2 Minuten, 6 Sekunden",
@@ -25,18 +18,11 @@
   "ducks-crossing": {
     "name": "Ducks Crossing",
     "id": "20_DucksCrossing",
-    "streamingPlatforms": [
-      "YouTube",
-      "SoundCloud"
-    ],
-    "streamingLinks": [
-      "https://www.youtube.com/playlist?list=PLtiN0t0kunT6W8GjiqGgWAW8T9Rbmt6SJ",
-      "https://soundcloud.com/rummelbude_musik/ducks-crossing"
-    ],
-    "video": {
-      "exists": true,
-      "link": "https://youtu.be/Gjjw9z29UjQ?si=P3ZZpMko3Z38i7hi"
+    "streaming": {
+      "YouTube": "https://www.youtube.com/playlist?list=PLtiN0t0kunT6W8GjiqGgWAW8T9Rbmt6SJ",
+      "SoundCloud": "https://soundcloud.com/rummelbude_musik/ducks-crossing"
     },
+    "video": "https://youtu.be/Gjjw9z29UjQ?si=P3ZZpMko3Z38i7hi",
     "publishDate": "26.12.2024",
     "songCount": 1,
     "length": "4 Minuten, 6 Sekunden",
@@ -48,18 +34,11 @@
   "lost": {
     "name": "LOST",
     "id": "19_LOST",
-    "streamingPlatforms": [
-      "YouTube",
-      "SoundCloud"
-    ],
-    "streamingLinks": [
-      "https://youtube.com/playlist?list=PLtiN0t0kunT5fPhAC_SeQz8CSEil5LFj0",
-      "https://soundcloud.com/rummelbude_musik/lost"
-    ],
-    "video": {
-      "exists": true,
-      "link": "https://youtu.be/DdOyPjpCrUQ?si=98UrIdTawwn6bFJR"
+    "streaming": {
+      "YouTube": "https://youtube.com/playlist?list=PLtiN0t0kunT5fPhAC_SeQz8CSEil5LFj0",
+      "SoundCloud": "https://soundcloud.com/rummelbude_musik/lost"
     },
+    "video": "https://youtu.be/DdOyPjpCrUQ?si=98UrIdTawwn6bFJR",
     "publishDate": "02.09.2024",
     "songCount": 1,
     "length": "4 Minuten, 15 Sekunden",
@@ -71,18 +50,11 @@
   "2nd-episode": {
     "name": "2ND EPISODE",
     "id": "18_2NDEPISODE",
-    "streamingPlatforms": [
-      "YouTube",
-      "SoundCloud"
-    ],
-    "streamingLinks": [
-      "https://youtube.com/playlist?list=PLtiN0t0kunT7ZQbuQ6CnmP3m91q6AQGhk",
-      "https://soundcloud.com/rummelbude_musik/sets/2nd-episode"
-    ],
-    "video": {
-      "exists": false,
-      "link": ""
+    "streaming": {
+      "YouTube": "https://youtube.com/playlist?list=PLtiN0t0kunT7ZQbuQ6CnmP3m91q6AQGhk",
+      "SoundCloud": "https://soundcloud.com/rummelbude_musik/sets/2nd-episode"
     },
+    "video": "",
     "publishDate": "01.04.2024",
     "songCount": 9,
     "length": "39 Minuten",
@@ -102,18 +74,11 @@
   "moroder": {
     "name": "MORODER",
     "id": "17_MORODER",
-    "streamingPlatforms": [
-      "YouTube",
-      "SoundCloud"
-    ],
-    "streamingLinks": [
-      "https://www.youtube.com/playlist?list=PLtiN0t0kunT7G55ZQckgE9QD8rTbw6EEQ",
-      "https://soundcloud.com/rummelbude_musik/sets/moroder"
-    ],
-    "video": {
-      "exists": false,
-      "link": ""
+    "streaming": {
+      "YouTube": "https://www.youtube.com/playlist?list=PLtiN0t0kunT7G55ZQckgE9QD8rTbw6EEQ",
+      "SoundCloud": "https://soundcloud.com/rummelbude_musik/sets/moroder"
     },
+    "video": "",
     "publishDate": "28.01.2024",
     "songCount": 2,
     "length": "9 Minuten",
@@ -126,16 +91,10 @@
   "hello": {
     "name": "HELLo",
     "id": "16_HELLo",
-    "streamingPlatforms": [
-      "YouTube"
-    ],
-    "streamingLinks": [
-      "https://youtube.com/playlist?list=PLtiN0t0kunT6yQgQkRNJi985mFC5EBM97"
-    ],
-    "video": {
-      "exists": false,
-      "link": ""
+    "streaming": {
+      "YouTube": "https://youtube.com/playlist?list=PLtiN0t0kunT6yQgQkRNJi985mFC5EBM97"
     },
+    "video": "",
     "publishDate": "18.06.2023",
     "songCount": 20,
     "length": "1 Stunde, 20 Minuten",
@@ -166,16 +125,10 @@
   "pluto": {
     "name": "PLUTO",
     "id": "15_PLUTO",
-    "streamingPlatforms": [
-      "YouTube"
-    ],
-    "streamingLinks": [
-      "https://youtube.com/playlist?list=PLtiN0t0kunT4T26ax4jclc5P2QtyhHYEx"
-    ],
-    "video": {
-      "exists": false,
-      "link": ""
+    "streaming": {
+      "YouTube": "https://youtube.com/playlist?list=PLtiN0t0kunT4T26ax4jclc5P2QtyhHYEx"
     },
+    "video": "",
     "publishDate": "28.05.2023",
     "songCount": 3,
     "length": "11 Minuten, 38 Sekunden",
@@ -189,16 +142,10 @@
   "verkehrt": {
     "name": "VERKEHRT",
     "id": "14_VERKEHRT",
-    "streamingPlatforms": [
-      "YouTube"
-    ],
-    "streamingLinks": [
-      "https://youtube.com/playlist?list=PLtiN0t0kunT59fcEYei9s2VR36CHYbXIM"
-    ],
-    "video": {
-      "exists": false,
-      "link": ""
+    "streaming": {
+      "YouTube": "https://youtube.com/playlist?list=PLtiN0t0kunT59fcEYei9s2VR36CHYbXIM"
     },
+    "video": "",
     "publishDate": "08.03.2023",
     "songCount": 3,
     "length": "15 Minuten",
@@ -212,16 +159,10 @@
   "kreativ-ii": {
     "name": "KREATIV II",
     "id": "13_KREATIVII",
-    "streamingPlatforms": [
-      "YouTube"
-    ],
-    "streamingLinks": [
-      "https://youtube.com/playlist?list=PLtiN0t0kunT7j7E2WohJ9xNCS6giJyZVf"
-    ],
-    "video": {
-      "exists": false,
-      "link": ""
+    "streaming": {
+      "YouTube": "https://youtube.com/playlist?list=PLtiN0t0kunT7j7E2WohJ9xNCS6giJyZVf"
     },
+    "video": "",
     "publishDate": "14.02.2023",
     "songCount": 1,
     "length": "6 Minuten",
@@ -233,16 +174,10 @@
   "chaos": {
     "name": "CHAOS",
     "id": "12_CHAOS",
-    "streamingPlatforms": [
-      "YouTube"
-    ],
-    "streamingLinks": [
-      "https://youtube.com/playlist?list=PLtiN0t0kunT7sdjaYZA5kJj6pMMRzzB25"
-    ],
-    "video": {
-      "exists": false,
-      "link": ""
+    "streaming": {
+      "YouTube": "https://youtube.com/playlist?list=PLtiN0t0kunT7sdjaYZA5kJj6pMMRzzB25"
     },
+    "video": "",
     "publishDate": "01.01.2023",
     "songCount": 11,
     "length": "52 Minuten",
@@ -264,18 +199,11 @@
   "kunst": {
     "name": "KUNST (feat. Hybrix)",
     "id": "11_KUNST",
-    "streamingPlatforms": [
-      "YouTube",
-      "Spotify"
-    ],
-    "streamingLinks": [
-      "https://youtube.com/playlist?list=PLtiN0t0kunT6AbBqNdL9RIkDl-eJgJShi",
-      "https://open.spotify.com/album/3cH6hvXtERjdKSTgi1FZMv"
-    ],
-    "video": {
-      "exists": false,
-      "link": ""
+    "streaming": {
+      "YouTube": "https://youtube.com/playlist?list=PLtiN0t0kunT6AbBqNdL9RIkDl-eJgJShi",
+      "Spotify": "https://open.spotify.com/album/3cH6hvXtERjdKSTgi1FZMv"
     },
+    "video": "",
     "publishDate": "26.11.2022",
     "songCount": 2,
     "length": "7 Minuten",
@@ -288,16 +216,10 @@
   "geometrie": {
     "name": "GEOMETRIE",
     "id": "10_GEOMETRIE",
-    "streamingPlatforms": [
-      "YouTube"
-    ],
-    "streamingLinks": [
-      "https://youtube.com/playlist?list=PLtiN0t0kunT7mRsyPq5Aycup62HYjl70_"
-    ],
-    "video": {
-      "exists": false,
-      "link": ""
+    "streaming": {
+      "YouTube": "https://youtube.com/playlist?list=PLtiN0t0kunT7mRsyPq5Aycup62HYjl70_"
     },
+    "video": "",
     "publishDate": "25.05.2022",
     "songCount": 11,
     "length": "34 Minuten",
@@ -319,16 +241,10 @@
   "happy-birthday": {
     "name": "HAPPY BIRTDAY",
     "id": "09_HAPPYBIRTHDAY",
-    "streamingPlatforms": [
-      "YouTube"
-    ],
-    "streamingLinks": [
-      "https://youtube.com/playlist?list=PLtiN0t0kunT457b9X861Id305pI749eB7"
-    ],
-    "video": {
-      "exists": false,
-      "link": ""
+    "streaming": {
+      "YouTube": "https://youtube.com/playlist?list=PLtiN0t0kunT457b9X861Id305pI749eB7"
     },
+    "video": "",
     "publishDate": "31.03.2022",
     "songCount": 2,
     "length": "6 Minuten",
@@ -341,16 +257,10 @@
   "wanted": {
     "name": "WANTED",
     "id": "08_WANTED",
-    "streamingPlatforms": [
-      "YouTube"
-    ],
-    "streamingLinks": [
-      "https://youtube.com/playlist?list=PLtiN0t0kunT7WdKGDeN6jMGhaQDzBOaza"
-    ],
-    "video": {
-      "exists": false,
-      "link": ""
+    "streaming": {
+      "YouTube": "https://youtube.com/playlist?list=PLtiN0t0kunT7WdKGDeN6jMGhaQDzBOaza"
     },
+    "video": "",
     "publishDate": "20.02.2022",
     "songCount": 18,
     "length": "1 Stunde",
@@ -379,16 +289,10 @@
   "schwarz": {
     "name": "SCHWARZ",
     "id": "07_SCHWARZ",
-    "streamingPlatforms": [
-      "YouTube"
-    ],
-    "streamingLinks": [
-      "https://youtube.com/playlist?list=PLtiN0t0kunT4xhFMxyBelCcwxG54CwGze"
-    ],
-    "video": {
-      "exists": false,
-      "link": ""
+    "streaming": {
+      "YouTube": "https://youtube.com/playlist?list=PLtiN0t0kunT4xhFMxyBelCcwxG54CwGze"
     },
+    "video": "",
     "publishDate": "24.12.2021",
     "songCount": 2,
     "length": "8 Minuten",
@@ -401,16 +305,10 @@
   "weiss": {
     "name": "WEISS",
     "id": "06_WEISS",
-    "streamingPlatforms": [
-      "YouTube"
-    ],
-    "streamingLinks": [
-      "https://youtube.com/playlist?list=PLtiN0t0kunT7TOYR2OYUlABEXOIfcVMUO"
-    ],
-    "video": {
-      "exists": false,
-      "link": ""
+    "streaming": {
+      "YouTube": "https://youtube.com/playlist?list=PLtiN0t0kunT7TOYR2OYUlABEXOIfcVMUO"
     },
+    "video": "",
     "publishDate": "28.11.2021",
     "songCount": 1,
     "length": "4 Minuten",
@@ -422,16 +320,10 @@
   "deep-space": {
     "name": "Deep Space",
     "id": "05_DeepSpace",
-    "streamingPlatforms": [
-      "YouTube"
-    ],
-    "streamingLinks": [
-      "https://youtube.com/playlist?list=PLtiN0t0kunT7j_Rlfg10yzTYouAMiwXm_"
-    ],
-    "video": {
-      "exists": true,
-      "link": "https://youtu.be/GzJWp3vxHho?si=Kc_6QpJ1em5GRcJa"
+    "streaming": {
+      "YouTube": "https://youtube.com/playlist?list=PLtiN0t0kunT7j_Rlfg10yzTYouAMiwXm_"
     },
+    "video": "",
     "publishDate": "31.03.2021",
     "songCount": 1,
     "length": "2 Minuten",
@@ -443,16 +335,10 @@
   "im-weltall": {
     "name": "Im Weltall",
     "id": "04_ImWeltall",
-    "streamingPlatforms": [
-      "YouTube"
-    ],
-    "streamingLinks": [
-      "https://youtube.com/playlist?list=PLtiN0t0kunT7QdPVEI1lNNhnMU2pRqClg"
-    ],
-    "video": {
-      "exists": false,
-      "link": ""
+    "streaming": {
+      "YouTube": "https://youtube.com/playlist?list=PLtiN0t0kunT7QdPVEI1lNNhnMU2pRqClg"
     },
+    "video": "",
     "publishDate": "20.03.2021",
     "songCount": 18,
     "length": "1 Stunde, 26 Minuten",
@@ -481,12 +367,8 @@
   "soundbox": {
     "name": "Soundbox",
     "id": "03_Soundbox",
-    "streamingPlatforms": [],
-    "streamingLinks": [],
-    "video": {
-      "exists": false,
-      "link": ""
-    },
+    "streaming": {},
+    "video": "",
     "publishDate": "01.01.2021",
     "songCount": 9,
     "length": "25 Minuten",
@@ -506,12 +388,8 @@
   "adventszauber-2020": {
     "name": "Adventszauber 2020",
     "id": "03_SoundboxAdventszauber",
-    "streamingPlatforms": [],
-    "streamingLinks": [],
-    "video": {
-      "exists": false,
-      "link": ""
-    },
+    "streaming": {},
+    "video": "",
     "publishDate": "29.11.2020",
     "songCount": 5,
     "length": "15 Minuten",
@@ -527,12 +405,8 @@
   "alles-banane": {
     "name": "Alles Banane",
     "id": "02_AllesBanane",
-    "streamingPlatforms": [],
-    "streamingLinks": [],
-    "video": {
-      "exists": false,
-      "link": ""
-    },
+    "streaming": {},
+    "video": "",
     "publishDate": "06.12.2020",
     "songCount": 10,
     "length": "7 Minuten",
@@ -553,12 +427,8 @@
   "instrumenten-misch": {
     "name": "Instrumenten Misch",
     "id": "01_InstrumentenMisch",
-    "streamingPlatforms": [],
-    "streamingLinks": [],
-    "video": {
-      "exists": false,
-      "link": ""
-    },
+    "streaming": {},
+    "video": "",
     "publishDate": "21.11.2020",
     "songCount": 14,
     "length": "8 Minuten",
