@@ -69,11 +69,12 @@ async function insertData() {
             buttonText.innerText = platform;
             button.appendChild(buttonText);
 
-            button.onclick = function() {
-                window.location.href = url.toString();
-            };
+            const a = document.createElement('a');
+            a.href = url.toString();
+            a.target = "_blank";
+            a.appendChild(button);
 
-            document.getElementById('streamingContainer').appendChild(button);
+            document.getElementById('streamingContainer').appendChild(a);
         });
     }
 
