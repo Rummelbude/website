@@ -563,7 +563,7 @@ a {
     }
 
     #menu {
-        width: 64vmin;
+        width: fit-content;
         left: auto;
         right: 4vmin;
     }
