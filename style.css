@@ -557,10 +557,6 @@ a {
 
 /* For Desktop View */
 @media screen and (min-width: 1024px) {
-    body {
-        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(56,0,0,1) 50%, rgba(0,0,0,1) 100%);
-    }
-
     body, .contentDiv, button, .infoTable, .tableDiv {
         font-size: 3vmin;
         font-family: "Courier Bold", "Courier Prime", "Courier New", Courier, monospace, serif;
