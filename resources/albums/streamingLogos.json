@@ -1,5 +1,10 @@
 {
   "SoundCloud": "SoundCloud.svg",
   "Spotify": "Spotify.svg",
-  "YouTube": "YouTube.svg"
+  "YouTube": "YouTube.svg",
+  "YouTube Music": "YouTube-Music.svg",
+  "Amazon Music": "Amazon-Music.svg",
+  "Apple Music": "Apple-Music.svg",
+  "Deezer": "Deezer.svg",
+  "Tidal": "Tidal.svg"
 }

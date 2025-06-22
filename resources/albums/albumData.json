@@ -75,8 +75,13 @@
     "name": "MORODER",
     "id": "17_MORODER",
     "streaming": {
+      "Spotify": "https://open.spotify.com/album/3gaJl8RHthLGuk7UZRaDh7",
       "YouTube": "https://www.youtube.com/playlist?list=PLtiN0t0kunT7G55ZQckgE9QD8rTbw6EEQ",
-      "SoundCloud": "https://soundcloud.com/rummelbude_musik/sets/moroder"
+      "YouTube Music": "https://music.youtube.com/playlist?list=OLAK5uy_kjh5onspHqMQi_J95PW8OMcE8BZ7kNxtw",
+      "SoundCloud": "https://soundcloud.com/rummelbude_musik/sets/moroder",
+      "Amazon Music": "https://music.amazon.com/albums/B0FDBCD262",
+      "Deezer": "https://www.deezer.com/en/album/773330901",
+      "Tidal": "https://tidal.com/album/442387756"
     },
     "video": "",
     "publishDate": "28.01.2024",
