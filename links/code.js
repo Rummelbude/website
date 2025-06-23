@@ -6,53 +6,39 @@ async function insertData() {
         .then((response) => response.json())
         .then((json) => links = json);
 
-    const insertionDiv = document.getElementById('socialMediaPlatforms');
-    for (const key in links) {
-        if (links.hasOwnProperty(key)) {
-            const { name, link } = links[key];
+    const generalDiv = document.getElementById('generalLinks');
+    const musicServicesDiv = document.getElementById('musicServicesLinks');
 
-            // Create the wrapper div with the class "tableDiv"
-            const tableDiv = document.createElement('div');
-            tableDiv.className = 'tableDiv';
+    // Function to create buttons and append them to a target div
+    const createButtons = (category, targetDiv) => {
+        for (const key in links[category]) {
+            const linkObj = links[category][key];
 
-            // Create table
-            const table = document.createElement('table');
-            const tableBody = document.createElement('tbody');
+            const button = document.createElement('button');
 
-            // Create row
-            const row = document.createElement('tr');
+            console.log(key);
+            const logo = document.createElement('img');
+            logo.src = `../images/links/${key}.svg`;
+            logo.classList.add("streamingButtonWithLogo");
+            button.style.fontSize = "smaller";
+            button.appendChild(logo);
 
-            // Logo cell
-            const logoCell = document.createElement('td');
-            const logoLink = document.createElement('a');
-            logoLink.href = link;
-            logoLink.target = "_blank";
-            logoLink.innerHTML = `<img src="../images/links/${name}.svg" class="platformIcon" alt="${name}">`;
-            logoCell.appendChild(logoLink);
-            row.appendChild(logoCell);
+            const buttonText = document.createElement('span');
+            buttonText.innerText = linkObj.name;
+            button.appendChild(buttonText);
 
-            // Link cell
-            const linkCell = document.createElement('td');
-            const linkElement = document.createElement('a');
-            linkElement.href = link;
-            linkElement.target = "_blank";
-            linkElement.textContent = name;
-            linkCell.appendChild(linkElement);
-            row.appendChild(linkCell);
+            const a = document.createElement('a');
+            a.href = linkObj.link.toString();
+            a.target = "_blank";
+            a.appendChild(button);
 
-            // Add row to the table body
-            const rowDiv = document.createElement('div');
-            rowDiv.className = "row";
-            rowDiv.appendChild(row);
-            tableBody.appendChild(rowDiv);
-            table.appendChild(tableBody);
-
-            // Append the table to the tableDiv, then append the tableDiv to insertionDiv
-            tableDiv.appendChild(table);
-            insertionDiv.appendChild(tableDiv);
+            targetDiv.appendChild(a);
         }
-    }
+    };
 
+    // Create buttons for each category
+    createButtons('general', generalDiv);
+    createButtons('music-services', musicServicesDiv);
 }
 
 document.addEventListener("DOMContentLoaded", function() {
