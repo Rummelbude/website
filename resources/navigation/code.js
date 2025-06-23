@@ -79,8 +79,8 @@ async function insertLinks() {
         const links = await response.json();
 
         const insertionDiv = document.getElementById('navigationSocialMedia');
-        Object.entries(links).forEach(([key, { name, link }]) => {
-            if (key !== "website") {
+        Object.entries(links.general).forEach(([key, { name, link }]) => {
+            if (key !== "Website") {
                 const linkElement = createLinkElement(name, link);
                 insertionDiv.appendChild(linkElement);
             }
