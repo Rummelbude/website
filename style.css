@@ -510,44 +510,8 @@ a {
     font-weight: bold;
 }
 
-#socialMediaPlatforms {
-    margin: 0 auto;
-    width: calc(100% - 20vmin);
-    text-align: center;
-
-    .tableDiv {
-        margin: 5vmin auto;
-        text-align: center;
-        background-color: rgba(0, 0, 0, 0.3);
-        padding: 2vmin;
-
-        --bezier: cubic-bezier(0.22, 0.61, 0.36, 1);
-        --edge-light: hsla(0, 0%, 50%, 0.8);
-        --text-light: rgba(255, 255, 255, 0.4);
-
-        border-radius: 0.5em;
-        align-items: center;
-        gap: 0.5em;
-
-        font-size: 4vmin;
-        font-family: "Courier Prime", "Courier New", Courier, monospace, serif;
-        letter-spacing: 0.05em;
-        line-height: 1;
-        font-weight: bold;
-
-        color: hsla(0, 0%, 90%);
-        border: 0;
-        box-shadow: inset 0.4px 1px 4px var(--edge-light);
-    }
-
-    table {
-        margin: 0 auto;
-    }
-
-    .platformIcon {
-        padding-right: 2vmin;
-        vertical-align: middle;
-    }
+#socialMediaPlatformsSeparator {
+    margin-top: 2vmin;
 }
 
 .asciiArt {
